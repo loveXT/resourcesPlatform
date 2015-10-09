@@ -1,0 +1,115 @@
+/* 已修改 鼠标点击时的样式*/
+.tree_newColour{
+	color: #6E91B9;
+	font-weight: bold;
+}
+.tree{
+	height: 20px;
+	cursor: pointer;
+	text-align: left;
+}
+.text{
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.tree_0{
+	background-image:url("images/root.png");;
+	background-repeat:no-repeat;
+	padding-left: 20px;
+	text-align: left;
+}
+.checkTree_0{
+	background-image:url("images/root.png");;
+	background-repeat:no-repeat;
+	padding-left: 20px;
+}
+.span{
+	width: 20px;
+	height: 20px;
+	float: left;
+}
+.haveTopClose {
+	background-image: url("images/P0.gif");
+	background-repeat: no-repeat;
+}
+.haveCenterClose {
+	background-image: url("images/P1.gif");
+	background-repeat: no-repeat;
+}
+.haveBottomClose {
+	background-image: url("images/P2.gif");
+	background-repeat: no-repeat;
+}
+.haveTopOpten {
+	background-image: url("images/M0.gif");
+	background-repeat: no-repeat;
+}
+.haveCenterOpten {
+	background-image: url("images/M1.gif");
+	background-repeat: no-repeat;
+}
+.haveBottomOpten {
+	background-image: url("images/M2.gif");
+	background-repeat: no-repeat;
+}
+/* 就一条信息的情况 */
+.haveOneClose {
+	background-image: url("images/P3.gif");
+	background-repeat: no-repeat;
+}
+.haveOneOpten {
+	background-image: url("images/M3.gif");
+	background-repeat: no-repeat;
+}
+/* 关闭打开情况 */
+.haveClose {
+	background-image: url("images/folderclose.png");
+	background-repeat: no-repeat;
+}
+.haveOpten {
+	background-image: url("images/folderopten.png");
+	background-repeat: no-repeat;
+}
+/* 文件 */
+.file {
+	background-image: url("images/file.png");
+	background-repeat: no-repeat;
+};
+.fileTop {
+	background-image: url("images/L0.gif");
+	background-repeat: no-repeat;
+}
+.fileCenter {
+	background-image: url("images/L1.gif");
+	background-repeat: no-repeat;
+}
+.fileBottom {
+	background-image: url("images/L2.gif");
+	background-repeat: no-repeat;
+}
+.fileLine{
+	background-image: url("images/L4.gif");
+	background-repeat: no-repeat;
+}
+.fileSpace{
+	background-image: url("images/L5.gif");
+	background-repeat: no-repeat;
+}
+.infoTree input{
+	margin-top: 3px;
+}
+.searchDiv{
+	text-align: center;
+	float: right;
+	padding-right: 20px;
+	text-align: center;
+}
+.searchDiv input{
+	width: 80px;
+}
+.treeSearch{
+	background: #DDFAFF;
+}
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/OASystem/teacherinfo/basicteacherinfo
+END
+main.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/OASystem/teacherinfo/basicteacherinfo/main.jsp
+END
+updateTeacherinfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/OASystem/teacherinfo/basicteacherinfo/updateTeacherinfo.jsp
+END
+list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/OASystem/teacherinfo/basicteacherinfo/list.jsp
+END
+addTeacherinfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/OASystem/teacherinfo/basicteacherinfo/addTeacherinfo.jsp
+END
+teacherinfoList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/OASystem/teacherinfo/basicteacherinfo/teacherinfoList.jsp
+END

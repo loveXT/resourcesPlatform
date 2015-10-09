@@ -1,0 +1,46 @@
+8
+
+dir
+113
+https://192.168.4.156/svn/resourcesPlatform/resourcesPlatform/WebContent/baseInfoManager
+https://192.168.4.156/svn/resourcesPlatform
+
+
+
+2015-06-26T06:26:06.453125Z
+42
+zhengrui
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8d8fe94-ff1a-3147-9856-b0c20d6f0d64
+
+chpaterManager
+dir
+
+mainTypeManager
+dir
+
+versionsManager
+dir
+
+courseManager
+dir
+
+njbbxkrelation
+dir
+
+gradeManager
+dir
+

@@ -1,0 +1,70 @@
+8
+
+dir
+113
+https://192.168.4.156/svn/resourcesPlatform/resourcesPlatform/src/com/googosoft
+https://192.168.4.156/svn/resourcesPlatform
+
+
+
+2015-06-30T07:12:50.000000Z
+104
+guolijian
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8d8fe94-ff1a-3147-9856-b0c20d6f0d64
+
+oa
+dir
+
+party
+dir
+
+menumanager
+dir
+
+ggs
+dir
+
+baseInfoManager
+dir
+
+convert2swf
+dir
+
+myFilesManager
+dir
+
+newstudents
+dir
+
+questionbank
+dir
+
+mess
+dir
+
+resource
+dir
+
+schools
+dir
+
+commons
+dir
+
+filesManager
+dir
+

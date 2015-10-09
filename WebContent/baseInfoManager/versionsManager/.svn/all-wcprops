@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/resourcesPlatform/!svn/ver/24/resourcesPlatform/WebContent/baseInfoManager/versionsManager
+END
+updateVersion.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/resourcesPlatform/!svn/ver/24/resourcesPlatform/WebContent/baseInfoManager/versionsManager/updateVersion.jsp
+END
+addVersion.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/resourcesPlatform/!svn/ver/24/resourcesPlatform/WebContent/baseInfoManager/versionsManager/addVersion.jsp
+END
+listVersion.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/resourcesPlatform/!svn/ver/24/resourcesPlatform/WebContent/baseInfoManager/versionsManager/listVersion.jsp
+END

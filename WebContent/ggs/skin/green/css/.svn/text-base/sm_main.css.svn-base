@@ -1,0 +1,42 @@
+.body{
+	background: #004F8A;
+}
+.sm_main_head {
+	width: 100%;
+	height: 63px;
+ 	background:url("../image/main/logoCenter.png") repeat-x; 
+}
+
+.sm_main_foot {
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.sm_main_head_logo_left {
+	float: left;
+	height: 100%;
+	width: 40%;
+	background:url("../image/main/logoLeft.png") no-repeat;
+}
+
+.sm_main_head_logo_right {
+	float: right;
+	height: 100%;
+	width: 60%;
+	background: url("../image/main/logoRight.png") top right no-repeat;
+}
+
+.sm_main_head_logo_point {
+	padding-top: 40px;
+	height: 20px;
+	width: 10%;
+	background: red;
+	text-align: center;
+	float: left;
+}
+.sm_main_body{
+	padding-left:10px;
+	padding-right:10px;
+}

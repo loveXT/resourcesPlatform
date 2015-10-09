@@ -1,0 +1,52 @@
+.links {
+	width:400px;
+	line-height:30px;
+/* 	margin-left: 300px; */
+	margin:0 auto;
+}
+.links a {
+	font-size:13px;
+	color:#fff;
+	padding: 0px 3px 0px 3px;
+}
+/****************footer*****************/
+.footer {
+	background:url('../../ggs/skin/blue/image/images/9-1.gif') repeat-x;
+	height:151px;
+	margin-top:5px;
+	width:1000px;
+	overflow: hidden;
+	text-align:center;
+	margin:0  auto;
+}
+.footcontent div {
+	float:left;
+}
+.footcontent {
+	width:550px;
+	height:120px;
+	font-size:12px;
+	padding-top:10px;
+	margin: 0 auto;
+	padding-left:250px;
+}
+.footcontent p{
+	line-height:25px;
+}
+.binaryCode {
+	margin-top:15px;
+}
+.weixinma{
+	float:left;
+	width:69px;
+	height:90px;
+	background:url('../../ggs/skin/blue/image/images/ewm_gfwx.gif');
+	margin-left: 50px;
+}
+.shoujima{
+	float:left;
+	width:69px;
+	height:90px;
+	background:url('../../ggs/skin/blue/image/images/ewm_sjapp.gif');
+	margin-left: 50px;
+}

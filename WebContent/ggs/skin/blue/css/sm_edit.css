@@ -1,0 +1,33 @@
+.sm_edit_center{
+	padding-top: 3px;
+}
+.sm_edit_from{
+	border: 1px solid #6d96bc;
+	padding: 4px;
+/* 	border-right: 1px solid #6d96bc; */
+}
+.sm_edit_tr{
+/* 	border-left: 1px solid #84b8f1; */
+	height: 30px;
+	clear: both;
+}
+.sm_edit_td_name{
+	float: left;
+	width: 90px;
+	height: 20px;
+	padding: 5px 5px 5px 0px;
+	text-align: right;
+/* 	border-left: 1px solid #6d96bc; */
+/* 	border-bottom: 1px solid #6d96bc; */
+	background:#B5E1FF;
+}
+.sm_edit_td_value{
+	float: left;
+	width: 160px;
+	height: 20px;
+	padding: 5px 5px 5px 5px;
+	text-align: left;
+/* 	border-left: 1px solid #6d96bc; */
+/* 	border-bottom: 1px solid #6d96bc; */
+/* 	background: #efefef; */
+}

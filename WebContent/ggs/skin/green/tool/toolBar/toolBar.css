@@ -1,0 +1,41 @@
+
+/* *****************************工具条样式*/
+/* 已修改 工具条所在行*/
+.toolBar_div {
+	background: url("images/toolBAr-bc.png") repeat-x;
+	height: 28px;
+	border-left: 1px solid #99BBE8;
+	border-bottom: 1px solid #99BBE8;
+}
+
+.toolBar_span {
+	cursor: pointer;
+	float: left;
+	font-size: 12px;
+	height: 20px;
+	margin-left: 1px;
+	margin-top:3px;
+	margin-bottom:3px;
+	text-align: center;
+	padding-left: 5px;
+}
+/* 已修改 工具条鼠标滑过样式 */
+.toolBar_span_newColor {
+ 	background-image: url("images/toolBar-hover.jpg"); 
+	background-repeat: repeat-x;
+	border: 1px solid #CFCFCF;
+}
+/* 已修改 工具条加载大图片 */
+.toolBar_Img {
+	width: 20px;
+	height: 20px;
+	background-image: url("images/tool.png");
+	float: left;
+}
+
+.toolBar_Content {
+	float: left;
+	padding-top:3px;
+	height:10px;
+	padding-bottom: 7px;
+}

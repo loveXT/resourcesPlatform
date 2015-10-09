@@ -1,0 +1,728 @@
+﻿/* Author:xx */
+/*所有标签，margin、padding都设成0，所有字号12px*/
+*,html, body, div, dl, dt, dd, ul, ol, li
+{
+	margin: 0;
+	padding: 0;
+	font-size:12px;
+	text-align:left;
+}
+
+/*滚动条样式*/
+body{
+
+    SCROLLBAR-FACE-COLOR: #EEF4FF; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; 
+	SCROLLBAR-SHADOW-COLOR: #ffffff; 
+	SCROLLBAR-3DLIGHT-COLOR: #ffffff; 
+	SCROLLBAR-ARROW-COLOR: #f0b700; 
+	SCROLLBAR-TRACK-COLOR: #ffffff; 
+	SCROLLBAR-DARKSHADOW-COLOR: #253f5c;
+ }    
+/*综合查询背景颜色*/
+.body_zhcx
+{
+	background-color:#F7F7F7;
+}
+
+/*图片按钮样式*/
+/*图片上传按钮*/
+.upfile
+{
+	width:60px;height:18px;
+    text-align:center;
+    border-bottom:1px solid #000;
+    border-right:1px solid #000;
+}
+/*保存*/
+.ibtn_save{
+	background:url('../images/button/ibtn_save.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+	cursor:hand;	
+}
+/*取消*/
+.ibtn_cancel{
+	background:url('../images/button/ibtn_cancel.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+	cursor:hand;
+}
+/*确定*/
+.ibtn_ok{
+	background:url('../images/button/ibtn_ok.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+	cursor:hand;
+}
+/*通过*/
+.ibtn_pass{
+	background:url('../images/button/ibtn_pass.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+}
+/*退回*/
+.ibtn_unpass{
+	background:url('../images/button/ibtn_unpass.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+}
+/*系统初始化*/
+.ibtn_init
+{
+	background:url('../images/button/ibtn_xtcsh.gif') transparent;
+	width:230px;
+	height:45px;
+	border:none;
+}
+/*计算*/
+.ibtn_calc{
+	background:url('../images/button/ibtn_calc.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+}
+/*重置*/
+.ibtn_rest{
+	background:url('../images/button/ibtn_rest.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+}
+/*上传*/
+.ibtn_upload{
+	background:url('../images/button/ibtn_upload.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+}
+/*统计*/
+.ibtn_tj{
+	background:url('../images/button/ibtn_tj.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+}
+/*关闭*/
+.ibtn_close{
+	background:url('../images/button/ibtn_gb.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+}
+
+/*打印*/
+.ibtn_print{
+	background:url('../images/button/ibtn_dy.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+}
+/*修改他人密码*/
+.ibtn_updPwd{
+	background:url('../images/button/ibtn_xgqtrymm.gif') transparent;
+	width:133px;
+	height:21px;
+	border:none;
+}
+/*文本框后面的的选择按钮*/
+.ibtn_sel{
+	text-align:center;
+	background-image:url('../images/button/ibtn_sel.gif') !important;
+	width:37px;
+	height:21px;
+	border:none;
+}
+.ibtn_search
+{
+	background:url('../images/button/cx.gif') transparent;
+	width:56px;
+	height:22px;
+	border:none;
+}
+/*综合查询 添加、删除条件 保存、删除方案*/
+.ibtn_addtj
+{
+	background:url('../images/button/tjtj.gif') transparent;
+	width:76px;
+	height:22px;
+	border:none;
+}
+.ibtn_deltj
+{
+	background:url('../images/button/sctj.gif') transparent;
+	width:76px;
+	height:22px;
+	border:none;
+}
+.ibtn_bcfa
+{
+	background:url('../images/button/bcfa.gif') transparent;
+	width:76px;
+	height:22px;
+	border:none;
+}
+.ibtn_scfa
+{
+	background:url('../images/button/scfa.gif') transparent;
+	width:76px;
+	height:22px;
+	border:none;
+}
+/*列选择 全选 取反 确定 取消*/
+.ibtn_qux{
+	background:url('../images/button/qux.gif') transparent;
+	width:56px;
+	height:22px;
+	border:none;
+}
+.ibtn_qf{
+	background:url('../images/button/qf.gif') transparent;
+	width:56px;
+	height:22px;
+	border:none;
+}
+.ibtn_qd{
+	background:url('../images/button/qd.gif') transparent;
+	width:56px;
+	height:22px;
+	border:none;
+}
+.ibtn_qx{
+	background:url('../images/button/qx.gif') transparent;
+	width:56px;
+	height:22px;
+	border:none;
+}
+/*汇总分析  增加，删除，关闭*/
+.ibtn_hzfx_tj{
+	background:url('../images/button/tj.gif') transparent;
+	width:56px;
+	height:22px;
+	border:none;
+}
+.ibtn_sc{
+	background:url('../images/button/sc.gif') transparent;
+	width:56px;
+	height:22px;
+	border:none;
+}
+.ibtn_gb{
+	background:url('../images/button/gb.gif') transparent;
+	width:56px;
+	height:22px;
+	border:none;
+}
+.ibtn_zdytj{
+	background:url('../images/button/zdytj.gif') transparent;
+	width:71px;
+	height:22px;
+	border:none;
+}
+/*排序 升序降序*/
+.ibtn_tjsx{
+	background:url('../images/button/tjsx.gif') transparent;
+	width:56px;
+	height:22px;
+	border:none;
+}
+.ibtn_tjjx{
+	background:url('../images/button/tjjx.gif') transparent;
+	width:56px;
+	height:22px;
+	border:none;
+}
+/*设备类*/
+.ibtn_sbl{
+	background:url('../images/button/sbl.gif') transparent;
+	width:56px;
+	height:22px;
+	border:none;
+}
+
+/**系统设置按钮**/
+.btns_add{
+	background:url('../images/systemset/zj.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+	vertical-align:bottom;
+    background-repeat:no-repeat;
+}
+.btns_xg{
+	background:url('../images/systemset/xg.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+	vertical-align:bottom;
+    background-repeat:no-repeat;
+}
+.btns_sc{
+	background:url('../images/systemset/sc.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+	vertical-align:bottom;
+    background-repeat:no-repeat;
+}
+.btns_bc{
+	background:url('../images/systemset/bc.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+	vertical-align:bottom;
+    background-repeat:no-repeat;
+}
+.btns_yl{
+	background:url('../images/systemset/yl.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+	vertical-align:bottom;
+    background-repeat:no-repeat;
+}
+.ibtn_xgc{
+	background:url('../images/systemset/tjxgc.gif') transparent;
+	width:72px;
+	height:21px;
+	border:none;
+	vertical-align:bottom;
+    background-repeat:no-repeat;
+}
+.ibtn_ksqc{
+	background:url('../images/systemset/ksqc.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+	vertical-align:bottom;
+    background-repeat:no-repeat;
+}
+.ibtn_jsqc{
+	background:url('../images/systemset/jsqc.gif') transparent;
+	width:65px;
+	height:21px;
+	border:none;
+	vertical-align:bottom;
+    background-repeat:no-repeat;
+}
+/*按钮容器的Div样式*/
+/*列表页面--工具栏按钮的Div的样式*/
+.d_btn
+{
+	background-image: url("../images/bg/bg_btn.gif") !important;
+	background-repeat: repeat-x;
+	height:27px;
+	line-height:27px;
+	padding:0;
+	display:inline-block;
+	width:100%;
+}
+/*按钮间隔线*/
+span.btn_split{
+    width:3px; height:27px;
+    background:url("../images/btn/sp-btn-split.gif") no-repeat center;
+}
+/*详细信息页面--最下面按钮的样式*/
+div.div_btn{
+	padding: 10px; 
+	text-align: center;
+	margin:0px auto;
+    height:21px;
+	/*background:#F0F0F0;*/
+}
+/*图标按钮样式*/
+/*每个图标按钮都要引用的样式，还需要再单独引用自己的样式*/
+.x-btn-text
+{
+	padding: 0px;
+	margin:0px;
+	overflow:visible;
+	padding-left:16px;
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: center;
+	background-color:transparent;
+	line-height:20px;
+	height:20px;
+	border:none;
+	white-space: nowrap;
+	cursor: pointer;
+	width:auto;
+	_width:0;
+}
+/*关闭*/
+.btn_close
+{
+	background-image:url('../images/btn/res-btn-close.gif');
+}
+/*增加*/
+.btn_add{
+	background-image:url('../images/btn/res-btn-add.png');
+}
+/*修改*/
+.btn_upd{
+	background-image:url('../images/btn/res-btn-upd.png') !important;
+}
+/*删除*/
+.btn_del{
+	background-image:url('../images/btn/res-btn-del.png') !important;
+}
+/*查看*/
+.btn_look{
+	background-image:url('../images/btn/res-btn-look.png') !important;
+}
+
+ /*生成合同文档*/
+.btn_create
+{
+	background-image:url('../images/btn/res-btn-created.png') !important;
+} 
+/*查询*/
+.btn_search{
+	background-image:url('../images/btn/res-btn-search.gif') !important;
+}
+/*筛选*/
+.btn_filter
+{
+	background-image:url('../images/btn/res-btn-filter.png') !important;
+}
+/*提交*/
+.btn_sub{
+	background-image:url('../images/btn/res-btn-sub.png') !important;
+}
+/*全部提交*/
+.btn_subAll{
+	background-image:url('../images/btn/res-btn-subAll.png') !important;
+}
+/*打印*/
+.btn_print{
+	background-image:url('../images/btn/res-btn-print.png') !important;
+}
+/*打印预览*/
+.btn_printView{
+	background-image:url('../images/btn/res-btn-dyyl.gif') !important;
+	
+}
+/*全部审核*/
+.btn_shAll
+{
+	background-image:url('../images/btn/res-btn-shAll.png') !important;
+}
+/*全部初始化*/
+.btn_cshAll
+{
+	background-image:url('../images/btn/res-btn-cshAll.gif') !important;
+}
+/*打印列表*/
+.btn_printList{
+	background-image:url('../images/btn/res-btn-printlist.gif') !important;
+}
+/*打印卡片*/
+.btn_printCard{
+	background-image:url('../images/btn/res-btn-dykp.gif') !important;
+}
+/*复制*/
+.btn_copy{
+	background-image:url('../images/btn/res-btn-copy.png') !important;
+}
+/*导出Excel*/
+.btn_excel{
+	background-image:url('../images/btn/res-btn-excel.png') !important;
+}
+/*导入Excel*/
+.btn_drexcel{
+	background-image:url('../images/btn/page_excel.png') !important;
+}
+/*快速提交*/
+.btn_quickSub
+{
+	background-image:url('../images/btn/res-btn-quicksub.png') !important;
+}
+/*快速入账*/
+.btn_quickRz
+{
+	background-image:url('../images/btn/res-btn-quickRz.png') !important;
+}
+/*入账*/
+.btn_Rz
+{
+	background-image:url('../images/btn/res-btn-rzl.png') !important;
+}
+/*清空*/
+.btn_Clear
+{
+	background-image:url('../images/btn/res-btn-clear.png') !important;
+}
+/**资产清查----导入txt\导出txt\开始清查/
+/*导入txt*/
+.btn_drtxt{
+	background-image:url('../images/btn/drtxt.gif') !important;
+}
+/*导出txt*/
+.btn_dctxt{
+	background-image:url('../images/btn/dctxt.gif') !important;
+}
+/*开始清查*/
+.btn_ksqc{
+	background-image:url('../images/btn/ksqc.gif') !important;
+}
+/*复核*/
+.btn_check{
+	background-image:url('../images/btn/res-btn-check.png') !important;
+}
+
+/*专家审批*/
+.btn_checkzj{
+	background-image:url('../images/btn/res-btn-check.png') !important;
+}
+/*上传*/
+.btn_upload{
+	background-image:url('../images/btn/res-btn-upload.png') !important;
+}
+/*下载*/
+.btn_down{
+	background-image:url('../images/btn/res-btn-down.png') !important;
+}
+/*审核*/
+.btn_verify{
+	background-image:url('../images/btn/res-btn-verify.gif') !important;
+}
+/*通过*/
+.btn_pass{
+	background-image:url('../images/btn/res-btn-pass.bmp') !important;
+}
+/*不通过*/
+.btn_unpass{
+	background-image:url('../images/btn/res-btn-unpass.bmp') !important;
+}
+/*返回*/
+.btn_back{
+	background-image:url('../images/btn/BackUp.gif') !important;
+}
+/*综合查询*/
+.btn_zhcx{
+	background-image:url('../images/btn/res-btn-find.gif') !important;
+}
+/*列选择*/
+.btn_colSel{
+	background-image:url('../images/btn/res-btn-colSel.gif') !important;
+}
+/*论文情况*/
+.btn_lwqk{
+	background-image:url('../images/btn/book-open-list.png') !important;
+}
+/*进修情况*/
+.btn_jxqk{
+	background-image:url('../images/btn/card-address.png') !important;
+}
+/*外语水平*/
+.btn_wysp{
+	background-image:url('../images/btn/edit-hyphenation.png') !important;
+}
+/*著作情况*/
+.btn_zzqk{
+	background-image:url('../images/btn/edit-image.png') !important;
+}
+/*成果奖励*/
+.btn_cgjl{
+	background-image:url('../images/btn/fruit.png') !important;
+}
+/*调整分类对照*/
+.btn_tzfldz{
+	background-image:url('../images/btn/tzfldz.gif') !important;
+}
+/*分类名称调整*/
+.btn_flmctz{
+	background-image:url('../images/btn/flmctz.gif') !important;
+}
+/*更新*/
+.btn_gx{
+	background-image:url('../images/btn/gx.gif') !important;
+}
+/*全部调整*/
+.btn_tzAll{
+	background-image:url('../images/btn/gxAll.gif') !important;
+}
+/*资产名称调整*/
+.btn_zcmctz{
+	background-image:url('../images/btn/zcmctz.gif') !important;
+}
+/*保存*/
+.btn_save{
+	background-image:url('../images/btn/res-btn-save.png') !important;
+}
+.btn_saveAll{
+	background-image:url('../images/btn/res-btn-save-all.png') !important;
+}
+/*帮助*/
+.btn_help{
+	background-image:url('../images/btn/res-btn-help.png') !important;
+}
+/*资产附单*/
+.btn_zcfd{
+	background-image:url('../images/btn/res-btn-zcfd.gif') !important;
+}
+/*组合排序*/
+.btn_zhpx{
+	background-image:url('../images/btn/res-btn-zhpx.gif') !important;
+}
+/*汇总分析*/
+.btn_hzfx{
+	background-image:url('../images/btn/res-btn-hzfx.png') !important;
+}
+/*条形码*/
+.btn_txm{
+	background-image:url('../images/btn/res-btn-txm.gif') !important;
+}
+/*导出DBF*/
+.btn_dbf{
+	background-image:url('../images/btn/res-btn-dbf.png') !important;
+}
+/*帐表*//*重新生成数据*/
+.btn_cxscsj{
+	background-image:url('../images/btn/res-btn-cxscsj.gif') !important;
+}
+
+/*页面标题部分*/
+.div_title
+{
+	height:40px; line-height:40px;
+	font-weight:bold; font-size:large;
+	padding: 10px;
+	text-align: center;
+	margin:0px auto;
+	/*background:#F0F0F0;*/
+}
+/*详细信息表格样式*/
+.form-detail-table
+{
+	border-collapse: collapse;
+	font-family: Arial Batang 宋体;
+	font-size: 12px;
+	border: 1px solid #CCD9E8;
+	outline:1px solid #CCD9E8;
+	margin:0px auto;
+}
+.form-detail-table tr td
+{
+	text-align: left;
+	border:1px solid #CCD9E8;
+	height:23px;
+}
+/*详细信息内部的服务器端控件（单选按钮等）的边框为空*/
+.form-detail-table tr td table td{
+	border:none;
+	white-space:nowrap;
+	word-wrap:break-word;
+}
+/*用于展示字段名称的列，主要目的是:让字段名称水平方向居右显示*/
+.form-detail-table .lable,
+.form-detail-table .txtRight
+{
+    text-align:right;
+    white-space:nowrap;
+}
+/*用于必填项，注：字段名称外加span标签即可*/
+.form-detail-table .lable span{color:Red;}
+/*详细信息表格内的文本框 要加class="text"，select，textarea(不用加class)的样式*/
+/*.x-input-text单独的文本框样式，和详细信息有同样的样式属性*/
+.x-input-text,
+.form-detail-table td .text,
+.form-detail-table td select,
+.form-detail-table td textarea
+{
+	border:1px solid #9FA3BC;
+	color: #000000;
+	font-size:12px;
+	width:95%;
+	text-align:left;
+	height: 18px;
+	line-height:18px;
+	padding-left:1px;
+}
+.form-detail-table td select
+{
+	height:21px;
+	line-height:21px;
+	width:96%;
+}
+/*.x-input-text单独的文本框样式,宽度固定*/
+.x-input-text{ width:150px;}
+.form-detail-table td .txtarea{height:50px; overflow:hidden;}
+/*后跟选择按钮的文本框所在的table的样式：.table-sel*/
+.form-detail-table .table-sel
+{
+	width:95%;
+}
+.form-detail-table .table-sel input
+{
+	width:100%;
+}
+/*紧跟文本框的选择按钮：.ibtn_sel*/
+.form-detail-table .table-sel .td-btnsel{ width:37px;}
+.ibtn_sel,
+.form-detail-table td .ibtn_sel{
+	width:37px;height:21px; line-height:21px; 
+	border:none; text-align:center;
+}
+/*datagrid里面的选择*/
+.d_grid .ibtn_sel,
+.dd_grid .ibtn_sel
+{
+	text-align:center;
+	background-image:url('../images/button/ibtn_sel.gif') !important;
+	width:37px;
+	height:21px;
+	border:none;
+}
+/*必填项：可以用label，或者span   样式：.keyTxt*/
+.keyTxt{ color:Red;}
+/*分页条数文本框：.txtpageSize*/
+.txtpageSize{
+	width: 40px; 
+	text-align: right;
+	border:1px #9fa3bc solid;
+	padding-right:2px;
+}
+/*文本右对齐：.txtRight*/
+.txtRight,
+.form-detail-table td .txtRight,
+.form-detail-table td .Decimal,
+.form-detail-table td .Int
+{ text-align:right;padding-left:0px; padding-right:1px;}
+
+table tr td .Decimal,
+table tr td .Int
+{ text-align:right;padding-left:0px; padding-right:1px;}
+/*读文本框：.txtreadonly*/
+.txtreadonly{background-color:#E6F9E6; color:#000;}
+.txtCenter,
+.form-detail-table td.txtCenter
+{ text-align:center;}
+
+
+/*详细信息内部特殊的table
+.form-detail-table .form-detail-table-tab
+{
+	border:1;
+	white-space:nowrap;
+	word-wrap:break-word;
+}*/
+.form-detail-table tr td .form-detail-table-tab td
+{
+	border-collapse: collapse;
+	border:1px solid #CCD9E8;
+	white-space:nowrap;
+	word-wrap:break-word;
+	padding-left:2px;	
+	height:23px;
+}
+
+.rt{
+text-align: right;
+}

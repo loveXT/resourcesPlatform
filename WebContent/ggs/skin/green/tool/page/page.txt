@@ -1,0 +1,18 @@
+
+
+int pageSize = Integer.valueOf(request.getParameter("pageSize")==null?"0":request.getParameter("pageSize"));
+int nowPage = Integer.valueOf(request.getParameter("nowPage")==null?"0":request.getParameter("nowPage"));
+
+form的id定义为pageForm
+
+form中添加内容
+<input type="hidden" name ="nowPage" id="nowPage" value="<%=nowPage%>" />
+<input type="hidden" name ="pageSize"  id="pageSize" value="<%=pageSize%>" />
+
+PageInfo pageInfo = 方法名(参数,……,nowPage,pageSize);
+List<Map<String, Object>> list = pageInfo.getList();
+	
+若数据源更改，则要相应更换pageManager中的查询数据的方法
+
+若page的根目录更换，则要形影更换page.inc文件中的pathPage地址
+

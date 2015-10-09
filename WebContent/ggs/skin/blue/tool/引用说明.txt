@@ -1,0 +1,25 @@
+
+<link type="text/css" rel="stylesheet" href="<%=path%>/tool/page/page.css" />
+<link type="text/css" rel="stylesheet" href="<%=path%>/tool/jumpWindow/jumpWindow.css"/>
+<link type="text/css" rel="stylesheet" href="<%=path%>/tool/optionBar/optionBar.css" />
+<link type="text/css" rel="stylesheet" href="<%=path%>/tool/toolBar/toolBar.css" />
+<link type="text/css" rel="stylesheet" href="<%=path%>/tool/tree/tree.css" />
+<link type="text/css" rel="stylesheet" href="<%=path%>/tool/validate/validate.css" />
+
+<script type="text/javascript" src="<%=path%>/tool/drag.js"></script>
+<script type="text/javascript" src="<%=path%>/tool/overflow.js"></script>
+<script type="text/javascript" src="<%=path%>/tool/hoverColor.js"></script>
+<script type="text/javascript" src="<%=path%>/tool/addIframe.js"></script>
+<script type="text/javascript" src="<%=path%>/tool/windowsListening.js"></script>
+<%---依赖drag.js---%>
+<script type="text/javascript" src="<%=path%>/tool/tdSpan.js"></script>
+<%---依赖drag.js---%>
+<script type="text/javascript" src="<%=path%>/tool/dragSize.js"></script>
+<%---依赖drag.js---%>
+<script type="text/javascript" src="<%=path%>/tool/jumpWindow/jumpWindow.js"></script>
+<script type="text/javascript" src="<%=path%>/tool/optionBar/optionBar.js"></script>
+<script type="text/javascript" src="<%=path%>/tool/toolBar/toolBar.js"></script>
+<script type="text/javascript" src="<%=path%>/tool/validate/validate.js"></script>
+<script type="text/javascript" src="<%=path%>/tool/tree/tree.js"></script>
+<script type="text/javascript" src="<%=path%>/tool/treeCheckbox/treeCheckbox.js"></script>
+

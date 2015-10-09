@@ -1,0 +1,52 @@
+8
+
+dir
+113
+https://192.168.4.156/svn/resourcesPlatform/resourcesPlatform/src/com/googosoft/questionbank/qsbasemanager/zuJuan
+https://192.168.4.156/svn/resourcesPlatform
+
+
+
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8d8fe94-ff1a-3147-9856-b0c20d6f0d64
+
+MakePaperManager.java
+file
+
+
+
+
+2015-06-23T02:00:05.556584Z
+1a901c55c21f7507c732c122e5a86c76
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+
+PaperConditionManager.java
+file
+
+
+
+
+2015-06-23T02:00:05.557584Z
+6770f7ec4c23f3b7cd045f744b8c7782
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+

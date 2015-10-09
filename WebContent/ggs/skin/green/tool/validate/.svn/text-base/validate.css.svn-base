@@ -1,0 +1,11 @@
+/* ******************************表单验证样式*/
+/* 未修改 验证不通过的遮盖层 */
+.validate_div {
+	background-color: pink;
+	border: 1px solid red;
+	position: absolute;
+}
+/* 未修改 验证获取焦点时的样式*/
+.validate_div_newColor {
+	background-color: #B2B4BF;
+}

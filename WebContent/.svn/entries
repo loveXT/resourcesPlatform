@@ -1,0 +1,103 @@
+8
+
+dir
+113
+https://192.168.4.156/svn/resourcesPlatform/resourcesPlatform/WebContent
+https://192.168.4.156/svn/resourcesPlatform
+
+
+
+2015-07-01T08:38:31.281250Z
+113
+liuhui
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8d8fe94-ff1a-3147-9856-b0c20d6f0d64
+
+ggs
+dir
+
+baseInfoManager
+dir
+
+notice
+dir
+
+image
+dir
+
+upload
+dir
+
+platform
+dir
+
+homePage
+dir
+
+openClass
+dir
+
+WEB-INF
+dir
+
+common
+dir
+
+css
+dir
+
+kindeditor-4.1.2
+dir
+
+jsp
+dir
+
+jwplayer
+dir
+
+flash
+dir
+
+filesmanager
+dir
+
+META-INF
+dir
+
+tools
+dir
+
+OASystem
+dir
+
+index
+dir
+
+subjectAchievement
+dir
+
+journal
+dir
+
+schools
+dir
+
+js
+dir
+
+subjectResearch
+dir
+

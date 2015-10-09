@@ -1,0 +1,118 @@
+/*
+	框架页
+*/
+html,body{
+    min-width:860px;
+    min-height:600px;
+}
+/*滚动条样式
+
+   SCROLLBAR-TRACK-COLOR: #EEF4FF;  #f0b700
+    SCROLLBAR-DARKSHADOW-COLOR: #000000 ;*/
+body{
+
+    SCROLLBAR-FACE-COLOR: #EEF4FF; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; 
+	SCROLLBAR-SHADOW-COLOR: #ffffff; 
+	SCROLLBAR-3DLIGHT-COLOR: #ffffff; 
+	SCROLLBAR-ARROW-COLOR: #f0b700; 
+	SCROLLBAR-TRACK-COLOR: #ffffff; 
+	SCROLLBAR-DARKSHADOW-COLOR: #253f5c;
+        }
+        
+#sp_czr,#sp_date,#sp_time{
+    padding-left:10px;
+}
+span .red
+{
+    color:Red;
+}
+/* 标题*/
+#title{
+  position:absolute;
+  top:0;
+  width:100%; 
+  height:60px; 
+  line-height:60px;
+  padding-left:155px; 
+  font-weight: bold;
+  color:#13496D;
+  background-color:transparent;
+  font-family: 华文行楷;
+  font-size: 24pt;
+  font-weight:700;
+}
+#titlebg{
+  width:100%; 
+  height:60px; 
+  background:url(../../Images/frame/headercenter.gif) repeat-x;
+}
+#titlebg #bgleft{
+    width:700px;
+    float:left;
+    height:100%;
+    background:url(../../Images/frame/headerleft.gif) no-repeat 0 0;
+}
+
+#titlebg #bgright{
+    width:350px;
+    height:100%;
+    float:left;
+    background:url(../../Images/frame/headerright.gif) no-repeat 0 0;
+}
+
+ #toolbar
+{
+    position:absolute;right:8px;top:5px;        
+    font-size:12px;
+    line-height:26px;
+    width:300px;
+    font-size:12px;
+    height:26px;
+} 
+#toolbar a{
+    padding-left:22px;
+    outline:none;
+    cursor:pointer;
+    margin-right:14px;
+    height:20px;
+    text-decoration:none;
+    color: #333333;
+}
+#dtime
+{
+    position:absolute;right:10px;top:35px;        
+    font-size:12px;
+    font-weight:normal;
+    line-height:26px;
+    width:380px;
+}
+/*搜索*/
+#ibtn_search{
+    background:transparent url(../../Images/frame/btn-search.gif) no-repeat 1px center;
+}
+/*帮助*/
+#ibtn_help{
+    background:transparent url(../../Images/frame/res-index-icon-help.gif) no-repeat 1px center;
+}
+/*常用功能*/
+#ibtn_common{
+    background:transparent url(../../Images/frame/btn-common.gif) no-repeat 1px center;
+}
+/*返回平台*/
+#ibtn_pingtai{
+    background:transparent url(../../Images/frame/btn-common.gif) no-repeat 1px center;
+}
+/*换肤*/
+#ibtn_chskin{
+    background:transparent url(../../Images/frame/btn-chskin.gif) no-repeat 2px center;
+}
+/*重新登陆*/
+#ibtn_reLogin{
+    background:transparent url(../../Images/frame/btn_reLogin.gif) no-repeat 2px center;
+}
+/*退出*/
+#ibtn_exit{
+    margin-right:2px!important;
+    background:transparent url(../../Images/frame/btn-exit.gif) no-repeat 2px center;
+}

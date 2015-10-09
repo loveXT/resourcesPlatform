@@ -1,0 +1,91 @@
+/* ******************************模态样式 */
+.model {
+	background-color: black;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10002；
+}
+/* ******************************弹窗样式 */
+.jumpWindow_main {
+	position: absolute;
+	z-index: 10003;
+	height: 28px;
+}
+
+.jumpWindow_left {
+	background-image: url("images/headline-left.png");
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 29px;
+	float: left;
+}
+/* 已修改  弹窗主框架*/
+.jumpWindow_title {
+	background-image: url("images/headline-bj.jpg");
+	background-repeat: repeat-x;
+	float: left;
+	color: white;
+	height: 20px;
+	padding-top: 9px;
+	font-weight: bold;
+}
+
+.jumpWindow_min {
+	float: left;
+	cursor: pointer;
+	background-image: url("images/window_min.png");
+	width: 31px;
+	height: 29px;
+}
+
+.jumpWindow_max {
+	float: left;
+	cursor: pointer;
+	background-image: url("images/window_max.png");
+	width: 31px;
+	height: 29px;
+}
+
+.jumpWindow_revert {
+	float: left;
+	cursor: pointer;
+	background-image: url("images/window_revert.png");
+	width: 31px;
+	height: 29px;
+}
+
+.jumpWindow_close {
+	float: left;
+	cursor: pointer;
+	background-image: url("images/window_close.png");
+	width: 31px;
+	height: 29px;
+}
+
+.jumpWindow_right {
+	float: left;
+	background-image: url("images/headline-right.png");
+	background-repeat: no-repeat;
+	width: 10px;
+	height: 29px;
+}
+/* 不修改 */
+.jumpWindow_iframe {
+	background-color: white;
+	clear: both;
+	border: 5px solid #4b9adf;
+	border-top: 0px;
+}
+/* 已修改  提示性弹窗主框架*/
+.jumpRemark_main {
+	background-image: url("images/headline-bj.jpg");
+	position: absolute;
+	z-index: 10003;
+	padding: 5px;
+}
+.selectJump{
+	background: url("images/selectJump.png") no-repeat right;
+}

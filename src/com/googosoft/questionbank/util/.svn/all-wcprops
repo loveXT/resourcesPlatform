@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/questionbank/util
+END
+ImportPapaerToWord.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/questionbank/util/ImportPapaerToWord.java
+END
+HtmlToWord.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/questionbank/util/HtmlToWord.java
+END
+WordExcelToHtml.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/questionbank/util/WordExcelToHtml.java
+END
+ExportDocTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/questionbank/util/ExportDocTest.java
+END
+PoiWordToHtml.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/questionbank/util/PoiWordToHtml.java
+END
+WordTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/questionbank/util/WordTest.java
+END
+ConnectionByJdbc.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/questionbank/util/ConnectionByJdbc.java
+END
+ParamUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/questionbank/util/ParamUtil.java
+END

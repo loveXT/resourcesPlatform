@@ -1,0 +1,85 @@
+﻿/*系统表单样式*/
+.res-form-style .res-div-muchrow table,
+.res-form-style
+{
+	border-collapse: collapse;
+	font-family: Arial Batang 宋体;
+	font-size: 13px;
+	border: 1px solid #CCD9E8;
+	outline:1px solid #CCD9E8;
+	margin:5px auto;
+}
+.res-form-style .res-div-muchrow table
+{
+    margin:0px;
+	}
+.res-form-style tr td
+{
+	text-align: left;
+	border:1px solid #CCD9E8;
+	}
+.res-form-style .lable
+{
+    text-align:right;
+    white-space:nowrap;
+    padding-left:2px;
+	}
+.res-form-style .lable span
+{
+    color:Red;
+	}
+.res-form-style .btnAlign
+{
+	margin:0px auto;
+    height:21px;
+	}
+.res-input-text,
+.res-form-style .res-div-muchrow table tr td .text,
+.res-form-style td .text,
+.res-form-style td select,
+.res-form-style td textarea
+{
+	background: url('../images/form/res-text-bg-x.gif') #fff repeat-x;
+	border:1px solid #9FA3BC;
+	height: 19px;
+	line-height:19px;
+	color: #000000;
+	font-size:12px;
+	text-align:left;
+	}	
+.res-input-text
+{
+	width:150px;
+	}	
+ .res-div-muchrow
+{
+	height:94%; 
+	width:99%;
+	overflow-y:auto;
+	border:1px solid #9FA3BC;
+	margin:0px;
+	padding:0px;
+	}
+.res-div-muchrow table,
+ .res-div-muchrow table tr td
+{
+	border:1px solid #9FA3BC;
+	}
+ .res-div-muchrow .tab-head
+{
+    background:url('../images/form/res-tab-header-x.gif') repeat-x;
+    height:22px;
+	text-align:center;
+	}	
+ .res-div-muchrow .row-add,
+ .res-div-muchrow .row-del
+{
+    width:20px;
+    text-align:left;
+    cursor:pointer;
+	}
+ .res-div-muchrow .row-del
+{
+	background:#ffffff url('../images/form/res-tab-del.gif') no-repeat center;
+}	
+.x-toolbar-left{ text-align:center;}

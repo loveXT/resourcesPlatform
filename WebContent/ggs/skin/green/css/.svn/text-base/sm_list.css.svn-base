@@ -1,0 +1,22 @@
+.sm_list .sm_index{
+	text-align: center;
+	background: #F8F9F5;
+	width: 30px;
+}
+.sm_list .sm_table_head table,.sm_list .sm_table_head td{
+	border-top: 0px;
+	border-bottom: 0px;
+}
+.sm_list .sm_table_head td{
+	font-weight: bold;
+	background: url("../image/list/headTd.png") repeat-x;
+	text-align: center;
+	border-bottom: 1px solid #CFCFCF;
+}
+.sm_table_tr_color_change{
+	background: #EDF7FF;
+}
+/* µã»÷tr */
+.sm_list_tr_click{
+	color: red;
+}

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/party/partyManager
+END
+ApplyManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/party/partyManager/ApplyManager.java
+END
+MemberImportUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/party/partyManager/MemberImportUtil.java
+END
+CommitteeManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/party/partyManager/CommitteeManager.java
+END
+MemberManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/party/partyManager/MemberManager.java
+END
+HonourBranchManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/party/partyManager/HonourBranchManager.java
+END
+ActivityManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/party/partyManager/ActivityManager.java
+END
+WorkPlanManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/party/partyManager/WorkPlanManager.java
+END
+WorkdayManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/party/partyManager/WorkdayManager.java
+END

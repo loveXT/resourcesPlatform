@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail
+END
+10-unhinted.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/10-unhinted.conf
+END
+70-no-bitmaps.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/70-no-bitmaps.conf
+END
+45-latin.conf
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/45-latin.conf
+END
+65-khmer.conf
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/65-khmer.conf
+END
+10-sub-pixel-bgr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/10-sub-pixel-bgr.conf
+END
+10-sub-pixel-rgb.conf
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/10-sub-pixel-rgb.conf
+END
+90-synthetic.conf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/90-synthetic.conf
+END
+10-no-sub-pixel.conf
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/10-no-sub-pixel.conf
+END
+50-user.conf
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/50-user.conf
+END
+40-nonlatin.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/40-nonlatin.conf
+END
+80-delicious.conf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/80-delicious.conf
+END
+10-autohint.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/10-autohint.conf
+END
+25-unhint-nonlatin.conf
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/25-unhint-nonlatin.conf
+END
+65-nonlatin.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/65-nonlatin.conf
+END
+30-urw-aliases.conf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/30-urw-aliases.conf
+END
+51-local.conf
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/51-local.conf
+END
+69-unifont.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/69-unifont.conf
+END
+65-fonts-persian.conf
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/65-fonts-persian.conf
+END
+70-yes-bitmaps.conf
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/70-yes-bitmaps.conf
+END
+30-metric-aliases.conf
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/30-metric-aliases.conf
+END
+10-sub-pixel-vrgb.conf
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/10-sub-pixel-vrgb.conf
+END
+10-sub-pixel-vbgr.conf
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/10-sub-pixel-vbgr.conf
+END
+20-unhint-small-vera.conf
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/20-unhint-small-vera.conf
+END
+20-fix-globaladvance.conf
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/20-fix-globaladvance.conf
+END
+49-sansserif.conf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/49-sansserif.conf
+END
+60-latin.conf
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/tools/fonts/conf.avail/60-latin.conf
+END

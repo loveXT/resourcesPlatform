@@ -1,0 +1,79 @@
+8
+
+dir
+113
+https://192.168.4.156/svn/resourcesPlatform/resourcesPlatform/src/com/googosoft/ggs/homeManager
+https://192.168.4.156/svn/resourcesPlatform
+
+
+
+2015-06-30T03:13:51.187500Z
+96
+zhaoshaofan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8d8fe94-ff1a-3147-9856-b0c20d6f0d64
+
+ExtJSMenu.java
+file
+
+
+
+
+2015-06-30T07:53:55.067794Z
+e6cf2584d251ab734bf91208ab344ffd
+2015-06-30T03:13:51.187500Z
+96
+zhaoshaofan
+
+LoginManager.java
+file
+
+
+
+
+2015-06-23T02:00:05.345572Z
+cfdd0939aeb0cba7244c707a5a15d4eb
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+
+menu
+dir
+
+ResourceByDisplay.java
+file
+
+
+
+
+2015-06-23T02:00:05.346572Z
+918f6f154b0d2c753a81337b326bd36c
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+
+Power.java
+file
+
+
+
+
+2015-06-23T02:00:05.347572Z
+8cfb3cd6303d28dfc1a1c50aa0e776f4
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+

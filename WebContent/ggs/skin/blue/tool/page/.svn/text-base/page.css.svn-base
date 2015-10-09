@@ -1,0 +1,79 @@
+#pageForm{
+}
+
+.page {
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	bottom: 0px;
+}
+
+.pgToolbar {
+	height: 24px;
+	width: 100%;
+	line-height: 24px;
+	font-size: 12px;
+	border: 1px solid #99BBE8;
+	background: url(../images/page/bg.gif);
+	margin: 0 3px 2px 1px;
+}
+
+.pgToolbar div {
+	float: left;
+	font-size: 12px;
+}
+
+.pgPanel {
+	float: left;
+	width: 100%;
+	height: 24px;
+	background: #FAFAFA;
+	padding-left: 3px;
+}
+
+.pgPerSize {
+	height: 16px;
+	line-height: 16px;
+	border: 1px solid #CCCCCC;
+	width: 20px;
+}
+
+.pgBtn {
+	padding-top: 3px;
+	width: 20px;
+	height: 22px;
+	display: block;
+	cursor: pointer;
+	margin: 1px;
+}
+
+.pgPress {
+	margin: 2px 0 0 2px;
+}
+
+.pgCurrentPage {
+	width: 24px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	border: 1px solid #CCCCCC;
+}
+
+.pgSearchInfo {
+	margin-left: 20px;
+}
+
+.cleanFloat {
+	clear: both;
+	display: none;
+}
+
+.separator {
+	width: 2px;
+	height: 24px;
+	margin: 0 5px 0 5px;
+	background: url(../images/page/separator.gif) no-repeat center;
+}
+.pageSelect{
+	width:40px;
+}

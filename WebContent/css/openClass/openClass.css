@@ -1,0 +1,91 @@
+.type{
+	margin-left:10px;
+}
+.type span{
+	font-size:14px;
+	font-weight: bold;
+	line-height: 30px;
+}
+#filename{
+	font-size:12px;
+	font-weight: bold;
+	color: #EA1C2D;
+}
+.content{
+	min-height: 300px;
+}
+#detail{
+	font-size:12px;
+	color: gray;
+	line-height: 18px;
+}
+#select{
+	border:0px;
+	height:34px;
+	width:90px;
+	background-color:#C8C4C4;
+}
+.fpage{
+	height:30px;
+	width:700px;
+	margin-top:50px;
+	margin-left:200px;
+	padding-bottom: 5px;
+  	float: left;
+}
+.pages{
+	height:25px;
+	width:25px;
+	border:1px solid #d7d7d7;
+	float: left;
+ 	text-align: center;
+  	margin-right: 5px;
+  	line-height: 25px;
+  	background-color:#f6f6f6;
+}
+.page1{
+	height:25px;
+	width:25px;
+	border:1px solid #d7d7d7;
+	float: left;
+ 	text-align: center;
+  	margin-right: 5px;
+  	line-height: 25px;
+  	background-color:#fb4149;
+}
+.buttons{
+	width:90px;
+	height:35px;
+	background-color: white;
+	border-color: floralwhite;
+}
+.button1{
+	width:90px;
+	height:35px;
+  	background-color:#fb4149;
+	border-color: floralwhite;
+}
+.ssinput{
+	margin-left: 20px;
+	margin-top: 5px;
+	border: 1px solid #cfcfcf;
+	width:150px;
+	height:25px;
+}
+#select1{
+	margin-left: 20px;
+	margin-top: 5px;
+	border: 1px solid #cfcfcf;
+	width:150px;
+	height:25px;
+}
+.sousuo{
+	float: right;
+  	margin-right: 300px;
+	margin-left: 10px;
+	width:81px;
+	height:24px;
+	margin-top: 6px;
+	cursor: pointer;
+	background:url('../../ggs/skin/blue/image/images/7-2.gif') no-repeat;
+}

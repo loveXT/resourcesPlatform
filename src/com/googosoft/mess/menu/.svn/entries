@@ -1,0 +1,52 @@
+8
+
+dir
+113
+https://192.168.4.156/svn/resourcesPlatform/resourcesPlatform/src/com/googosoft/mess/menu
+https://192.168.4.156/svn/resourcesPlatform
+
+
+
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8d8fe94-ff1a-3147-9856-b0c20d6f0d64
+
+MenuManager.java
+file
+
+
+
+
+2015-06-23T02:00:05.625588Z
+8097cfe6da603fe0f476f8bc80ca50d6
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+
+test.java
+file
+
+
+
+
+2015-06-23T02:00:05.626588Z
+c670dd9fdd7de1210d16f3e748221ad9
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+

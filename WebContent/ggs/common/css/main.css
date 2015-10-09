@@ -1,0 +1,108 @@
+	@CHARSET "UTF-8";
+/* ============GPX main页面样式========*/
+	#topRight{
+		width:383px;
+		height:236px;
+		border:1px solid #D2D2D2;
+		float:left;
+		position:relative;
+		margin-right:auto;
+		margin-top:30px;
+		background-color: white;
+	}
+	#topLeft{
+		width:483px;
+		height:236px;
+		border:1px solid #D2D2D2;
+		position:relative;
+		float : left;
+		margin-left:15px;
+		margin-top:30px;
+		background-color: white;
+	}
+	
+	.list{
+		height: 527px;
+		width: 1243px;
+	}	
+
+	#topallleft{
+		width:800px;
+		height:500px;
+		border:1px solid #D2D2D2;
+		position:relative;
+		vertical-align: middle;
+		margin-left:auto;		
+		margin-right:auto;
+		margin-top:40px;
+		background-color: white;
+	}
+	
+	#bigdiv{
+		width:900px;
+		height:300px;
+		position:relative;
+		float: center;
+		vertical-align: middle;
+		margin-left:auto;		
+		margin-right:auto;
+		
+	}
+
+	
+		.portlet-title {
+			border-bottom: 3px solid #1194DC;
+			background-color: #EEF7FE;
+			margin-top: 1px;
+			padding-left: 5px;
+			padding-top: 2px;
+		}
+		.title_border{
+		display: inline-block;
+		height: 26px;
+		background: white;
+		border: solid 1px #38A6E5;
+		padding: 1px 1px 0;
+		border-bottom: none;
+	}
+		.portlet-title-text{
+		border: 1px solid #0791DB;
+		padding: 0 5px;
+		background: #38A6E5;
+		display: inline-block;
+		height: 25px;
+		vertical-align: middle;
+		line-height: 25px;
+		border-bottom: none;
+		color: white;
+		text-shadow: none;
+	}
+		#texts{
+		font-size: 13px;
+		margin-left: 8px;
+		margin-top:-15px;
+		color:black;
+		line-height:25px;
+				
+	}
+	.tab{
+	border-top: 1px solid #FFF;
+	border-left: 1px solid #FFF;
+	}
+	
+	.nav{
+		margin-top: 50px;
+	}
+
+.nav_button{
+		border: 1px solid #0791DB;
+		padding: 0 5px;
+		background: #38A6E5;
+		display: inline-block;
+		height: 25px;
+		vertical-align: middle;
+		line-height: 25px;
+		border-bottom: none;
+		color: white;
+		text-shadow: none;
+	}

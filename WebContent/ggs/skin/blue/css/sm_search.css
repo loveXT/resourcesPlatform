@@ -1,0 +1,52 @@
+/*									查询样式*/
+/*  查询中的按钮行 样式*/
+.sm_search{
+	background-color:#E9E9E9;
+	display: none;
+	position: absolute;
+	z-index: 1021;
+	width: 100%;
+}
+.sm_search table{
+	border: 0px;
+}
+.sm_search table td{
+	border: 0px;
+	padding-left: 20px;
+	height: 30px;
+}
+/* 查询中的table行样式*/
+.sm_search .sm_goSearch{
+	background-color: #C9E4F7;
+}
+.sm_search .sm_goSearch .sm_goSearch_go{
+	float: left;
+	width: 40px;
+	margin-left: 50px;
+	height: 17px;
+	cursor: pointer;
+	padding-top: 5px;
+	font-weight: bold;
+	color:#6E91B9;
+}
+.sm_search .sm_goSearch .sm_goSearch_back{
+	float: left;
+	padding-top: 5px;
+	margin-left: 20px;
+	font-weight: bold;
+	width: 40px;
+	cursor: pointer;
+	color:#6E91B9;
+}
+.sm_goSearch_btn_init{
+	float: left;
+	padding-top: 5px;
+	padding-left: 15px;
+	margin-left: 20px;
+	font-weight: bold;
+	height: 22px;
+	width: 56px;
+	cursor: pointer;
+	color:#003559;
+	background: url("../image/search/sm_goSearch_btn_init.png") no-repeat;
+}

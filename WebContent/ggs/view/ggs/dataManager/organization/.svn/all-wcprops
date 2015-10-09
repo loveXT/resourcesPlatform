@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/dataManager/organization
+END
+employeeAddList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/dataManager/organization/employeeAddList.jsp
+END
+managerList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/dataManager/organization/managerList.jsp
+END
+employeeInfoList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/dataManager/organization/employeeInfoList.jsp
+END
+mainDepartment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/dataManager/organization/mainDepartment.jsp
+END
+employeeManager.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/dataManager/organization/employeeManager.jsp
+END
+employeeAddMain.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/dataManager/organization/employeeAddMain.jsp
+END

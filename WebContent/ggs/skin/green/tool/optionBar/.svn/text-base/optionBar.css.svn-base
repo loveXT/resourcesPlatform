@@ -1,0 +1,38 @@
+
+/* *****************************菜单条样式*/
+/* 已修改 */
+.optionBar_div {
+	border-bottom: 1px solid #CFCFCF;
+	height: 27px;
+	position: absolute;
+	z-index: 1;
+	right: 10px;
+}
+
+.optionBar_button {
+	border-right: 1px solid #CFCFCF;
+	position: relative;
+	margin-left: 2px;
+	width: 50px;
+	font-size: 12px;
+	text-align: center;
+	cursor: pointer;
+	padding: 3px 5px;
+	height: 23px;
+	margin-top: 4px;
+}
+/* 已修改 */
+.optionBar_button_oldColor {
+	border-color: #99BBE8; 
+	border-bottom-style:none;
+	color: #3F5A85;
+	background: url("images/aniu.jpg") repeat-x;
+}
+/* 已修改 */
+.optionBar_button_newColor {
+	background-color: #6F91B7;
+	/* border-bottom-color: white; */
+	font-weight:bold;
+	font-weight: bold;
+	background: white;
+}

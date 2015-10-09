@@ -1,0 +1,100 @@
+8
+
+dir
+113
+https://192.168.4.156/svn/resourcesPlatform/resourcesPlatform/WebContent/kindeditor-4.1.2
+https://192.168.4.156/svn/resourcesPlatform
+
+
+
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8d8fe94-ff1a-3147-9856-b0c20d6f0d64
+
+license.txt
+file
+
+
+
+
+2015-06-23T02:00:29.334944Z
+b0d181292c99cf9bb2ae9166dd3a0239
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+
+lang
+dir
+
+plugins
+dir
+
+asp
+dir
+
+kindeditor-minview.js
+file
+
+
+
+
+2015-06-23T02:00:29.335944Z
+c28fa716ef335e5709b755aa0374005c
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+
+themes
+dir
+
+php
+dir
+
+kindeditor.js
+file
+
+
+
+
+2015-06-23T02:00:29.337944Z
+eb573a4ea0f38ce176fdd76082b40608
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+
+asp.net
+dir
+
+kindeditor-min.js
+file
+
+
+
+
+2015-06-23T02:00:29.339944Z
+940e2204a762d0e766d2ac81b763549b
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+
+jsp
+dir
+
+examples
+dir
+

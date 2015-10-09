@@ -1,0 +1,14 @@
+.WdateSKIN{
+	background:#FFFFFF url(date.gif) no-repeat right;
+	cursor: pointer;
+}
+
+.WtimeSKIN{
+	background:#FFFFFF url(time.gif) no-repeat right !important;
+	cursor: pointer;
+}
+
+.WdateFmtErr{
+	font-weight:bold;
+	color:red;
+}

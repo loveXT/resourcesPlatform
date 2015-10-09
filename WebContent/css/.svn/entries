@@ -1,0 +1,88 @@
+8
+
+dir
+113
+https://192.168.4.156/svn/resourcesPlatform/resourcesPlatform/WebContent/css
+https://192.168.4.156/svn/resourcesPlatform
+
+
+
+2015-06-30T07:56:40.156250Z
+108
+guolijian
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c8d8fe94-ff1a-3147-9856-b0c20d6f0d64
+
+xcConfirm.css
+file
+
+
+
+
+2015-06-23T02:00:27.825858Z
+baa7e36cd927519c3294032b2d4dfdd3
+2015-06-21T07:46:33.546875Z
+4
+lijiewen
+
+indexs.css
+file
+
+
+
+
+2015-06-24T01:43:20.262050Z
+0ccf0101b0b78a5746ae75fad8635e15
+2015-06-24T02:33:54.140625Z
+10
+zhengrui
+
+openClass
+dir
+
+header
+dir
+
+journal
+dir
+
+search.css
+file
+
+
+
+
+2015-06-29T07:39:10.519455Z
+728fa1887ac4279e3d8dfb7bd749daf0
+2015-06-29T06:03:50.750000Z
+75
+zhengrui
+
+index.css
+file
+
+
+
+
+2015-06-23T02:00:27.826858Z
+0ea369d0ba157b31886ad2bf56ab6226
+2015-06-23T01:52:51.031250Z
+5
+zhengrui
+
+footer
+dir
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/share
+END
+done.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/share/done.jsp
+END
+error.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/share/error.jsp
+END
+noPower.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/share/noPower.jsp
+END
+doneByParent.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/share/doneByParent.jsp
+END
+nologin.png
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/share/nologin.png
+END
+doneByUrl.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/share/doneByUrl.jsp
+END
+session.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/share/session.jsp
+END

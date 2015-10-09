@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/userManager/user
+END
+addUser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/userManager/user/addUser.jsp
+END
+listUser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/userManager/user/listUser.jsp
+END
+listRole.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/userManager/user/listRole.jsp
+END
+validateByLoginName.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/userManager/user/validateByLoginName.jsp
+END
+updateUser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/userManager/user/updateUser.jsp
+END
+mainUser.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/userManager/user/mainUser.jsp
+END
+treeDepartment.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/WebContent/ggs/view/ggs/userManager/user/treeDepartment.jsp
+END

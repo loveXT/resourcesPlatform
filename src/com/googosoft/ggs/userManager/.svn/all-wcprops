@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/userManager
+END
+ResourceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/userManager/ResourceManager.java
+END
+UserManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/userManager/UserManager.java
+END
+OperateManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/userManager/OperateManager.java
+END
+UserRoleManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/userManager/UserRoleManager.java
+END
+RoleManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/userManager/RoleManager.java
+END
+UMManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/userManager/UMManager.java
+END
+IManagerContants.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/userManager/IManagerContants.java
+END
+UserDepartmentManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/userManager/UserDepartmentManager.java
+END
+DepartmentManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/userManager/DepartmentManager.java
+END

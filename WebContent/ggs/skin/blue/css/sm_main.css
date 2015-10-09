@@ -1,0 +1,92 @@
+.body{
+	background: #92C2EA;
+}
+.sm_main_head {
+	width: 100%;
+	height: 63px;
+ 	background:url("../image/main/logoCenter.png") repeat-x; 
+}
+
+.sm_main_foot {
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	padding-top: 5px;
+	background:url("../image/main/logoFoot.gif") repeat-x; 
+}
+
+.sm_main_foot lable{
+	color: black;
+	font-size: 16;
+}
+
+.sm_main_head_logo_left {
+	float: left;
+	height: 50px;
+	width: 470px;
+	cursor: pointer;
+	margin: 8px 0 0 16px;
+	background:url("../image/main/logoLeft.png") no-repeat;
+}
+
+.sm_main_head_logo_right {
+	float: right;
+	height: 100%;
+	width: 40%;
+	background: url("../image/main/logoRight.png") top right no-repeat;
+}
+
+.sm_main_head_logo_point {
+	height: 30px;
+	width: 95%;
+	margin-top: 8px;
+}
+.sm_main_body{
+	padding-left:4px;
+	padding-right:2px;
+}
+
+
+
+.iconA{
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-left: 6px;
+}
+
+.iconA:HOVER{
+	cursor: pointer;
+}
+
+.lableA{
+	cursor: pointer;
+	color: white;
+}
+
+.lableA:HOVER{
+	cursor: pointer;
+	color: gray;
+}
+
+#skinButtonFirst{
+	background: url("../image/main/skinButtonFirst.png") no-repeat;
+}
+
+#skinButtonSecond{
+	background: url("../image/main/skinButtonSecond.png") no-repeat;
+}
+
+#loginOut{
+	background: url("../image/main/loginOut.png") no-repeat;
+	margin-left: 10px;
+}
+
+.direction{
+	float: right;
+}
+
+.welcome{
+	cursor: pointer;
+	color: white;
+}

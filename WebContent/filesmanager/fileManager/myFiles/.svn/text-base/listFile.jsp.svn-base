@@ -1,0 +1,703 @@
+<%@page import="com.googosoft.questionbank.questionbank.PointManager"%>
+<%@page import="com.googosoft.common.util.Validator"%>
+<%@page import="com.googosoft.zapi.DBHelper"%>
+<%@page import="com.googosoft.filesManager.fileManager.ProcessFileUtil"%>
+<%@page import="com.googosoft.filesManager.fileManager.SelectFilesManager"%>
+<%@page import="com.googosoft.commons.OperationCache"%>
+<%@page import="com.googosoft.filesManager.fileManager.FolderController"%>
+<%@page import="com.googosoft.filesManager.fileManager.FilesManager"%>
+<%@page import="com.googosoft.filesManager.fileManager.FileManager"%>
+<%@page import="com.googosoft.filesManager.fileManager.DeleteFiles"%>
+<%@page import="com.googosoft.filesManager.fileManager.CategoryManager" %>
+<%@page import="com.googosoft.commons.IUploadImgContants"%>
+<%@page import="java.io.File"%>
+<%@page import="com.googosoft.ggs.homeManager.Power"%>
+<%@page import="java.util.Map"%>
+<%@page import="com.googosoft.page.PageInfo"%>
+<%@page import="java.util.List"%>
+<%@page import="com.googosoft.zapi.CUDHelper"%>
+<%@page import="com.googosoft.commons.Validate"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@page import="java.util.ArrayList"%>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>资源管理</title>
+<%@include file="/ggs/include/css.inc" %>
+<style type="text/css">
+	.sm_edit_from select{
+		width:154px;
+		height:20px;
+	}
+	.sm_edit_td_name{
+		width:40px;
+	}
+	.mytool{
+		display:inline;
+/* 		position:absolute; */
+/* 		left:190px; */
+		font-size: 12px;
+		height: 22px;
+/* 		border: 1px solid #D3D9DD; */
+ 		margin-top: 2px;
+ 		float: left;
+	}
+	.EXTENDNAME{
+		display:inline;
+/* 		position:absolute; */
+/* 		left:190px; */
+		font-size: 12px;
+		height: 22px;
+/* 		border: 1px solid #D3D9DD; */
+ 		margin-top: 4px;
+ 		float: left;
+	}
+	#Flag{
+		margin-top:2px;
+		margin-right:5px;
+	}
+	#major,#chapter,#course,#point{
+		width:110px;
+	}
+	.sm_edit_td_value{
+		width:110px;
+	}
+	.sm_goSearch_btn_init{
+		margin-left: 5px;
+	}
+	.sm_edit_td_name{
+		margin-top: 3px;
+		padding-bottom: 0px;
+	}
+</style>
+<%	
+	//设置编码格式为"utf-8"
+	request.setCharacterEncoding("utf-8");
+	response.setContentType("text/html;charset=utf-8");
+	//得到审核状态Flag
+	String Flag = request.getParameter("Flag");
+	String EXTENDNAME= request.getParameter("EXTENDNAME");
+	//得到operate按钮操作权限
+	String operate = OperationCache.getOperation(request);
+	//得到项目路径
+	String sp = File.separator;
+    String path = request.getContextPath();  
+	String serverPath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
+	String downbase=request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort();
+    String basePath = request.getRealPath("/");  
+    //接受chapter_id章节编号,course_id课程编号,major_id专业编号
+    String Major_Id = request.getParameter("MAJOR_ID");
+	String COURSE_ID = request.getParameter("COURSE_ID");
+	String CHAPTER_ID = request.getParameter("CHAPTER_ID");
+	String POINT_ID = request.getParameter("POINT_ID");
+	String downFilePath =basePath + IUploadImgContants.IMGPATH;
+	//跳转到文件下载的servlet所需的路径以及文件名
+	String downURL = path+"/DownLoad/";
+	//分页设置pageSize每页显示几条数据,nowPage当前页
+	int pageSize = Integer
+	.valueOf(request.getParameter("pageSize") == null
+	? "0"
+	: request.getParameter("pageSize"));
+	int nowPage = Integer
+	.valueOf(request.getParameter("nowPage") == null
+	? "0"
+	: request.getParameter("nowPage"));
+	//根据operateType的类型进行cud进行处理
+	String Fid = request.getParameter("Fid");
+	String operateType = request.getParameter("operateType");
+	Boolean bool = false;
+	String ids = request.getParameter("P_FILES_FILEID_S_WD");
+	if(Validate.noNull(operateType)){
+		if(operateType.equals("D")){
+			String sps = File.separator;
+			String toPath = request.getRealPath(sps) + IUploadImgContants.IMGPATH;
+			DeleteFiles df = DeleteFiles.getInstance();
+			df.judgeIds(ids,toPath);
+		}
+		bool = new CUDHelper(request,"_",null).execute();
+	}
+%>
+<body>
+
+	<form class="sm_edit_from" id="pageForm" style="background:#B5E1FF;" method="post" action="listFile.jsp" >
+	<div class="tool">
+			<div class="mytool">
+					<select id="Flag" name="Flag" onchange="changeName();">
+						<option value="" <%if(Validate.isNull(Flag)){%>selected<%} %> >全部</option>
+						<option value="00" <%if("00".equals(Flag)){%>selected<%} %> >未提交</option>
+							<option value="33" <%if("33".equals(Flag)){%>selected<%} %> >打回</option>
+						<option value="11" <%if("11".equals(Flag)){%>selected<%} %> >待审核</option>
+						<option value="22" <%if("22".equals(Flag)){%>selected<%} %> >审核已通过</option>
+						
+					</select>	  	  		
+			</div>
+			<div class="EXTENDNAME">
+					<select id="EXTENDNAME" name="EXTENDNAME" onchange="changeName();">
+						<option value="" <%if(Validate.isNull(EXTENDNAME)){%>selected<%} %> >全部</option>
+						
+						<%
+							CategoryManager categorymanager=new CategoryManager();
+							List categorylist=categorymanager.findPageInfo();
+							Map categoryMap;
+							for(int i=0;i<categorylist.size();i++){
+								categoryMap= (Map)categorylist.get(i);
+							
+						
+						%>
+						
+						<option value="<%=categoryMap.get("ID") %>" <%if(categoryMap.get("ID").equals(EXTENDNAME)){%>selected<%} %>><%=categoryMap.get("NAME").toString()%></option>
+
+						<%
+							}
+						%>
+					<%-- 	<option value="<%=categoryMap.get("ID")%>" <%if("00".equals(EXTENDNAME)){%>selected<%} %>>电子文件</option>
+						<option value="01" <%if("01".equals(EXTENDNAME)){%>selected<%} %>>图片</option>
+						<option value="02" <%if("02".equals(EXTENDNAME)){%>selected<%} %>>视频</option>
+						<option value="03" <%if("03".equals(EXTENDNAME)){%>selected<%} %>>其他</option> --%>
+					</select>		  	  		
+			</div>
+	</div>
+		<div >
+		<input type="hidden" name="nowPage" id="nowPage" value="<%=nowPage%>" />
+		<input type="hidden" name="pageSize" id="pageSize" value="<%=pageSize%>" />
+		<input type="hidden" name="operateType" value="">
+		<input type="hidden" name="P_FILES_FILEID_S_WD" value="">
+		<input type="hidden" name="P_FILES_FILEID_S_WU" value="">
+		<input type="hidden" name="P_FILES_FLAG_S_S" value="">
+		<input type="hidden" id="flag1" name="Flag" value=""/>
+		<div class="sm_edit_tr" style="border-left: 1px solid #84b8f1;width:auto;">
+			<div class="sm_edit_td_name" >专业</div>
+			<div class="sm_edit_td_value">
+				<select id="major"   class="pageSelect" name="MAJOR_ID" onchange="addMajor();">
+					<option id="default" value="">----选择专业----</option>
+					<option value="public">公共基础课</option>
+				<%
+				SelectFilesManager selectFiles = new SelectFilesManager();
+				List majorList = selectFiles.findPageInfo();
+				Map majorMap;
+				for(int i=0;i<majorList.size();i++){
+					majorMap = (Map)majorList.get(i);
+					%>
+					<option value="<%=majorMap.get("MAJOR_ID")%>"><%=majorMap.get("MAJOR_NAME")%></option>
+					<%
+				}
+				%>
+				</select>
+			</div>
+			<div class="sm_edit_td_name">课程</div>
+			<div class="sm_edit_td_value">
+				<select id="course" name="COURSE_ID" onchange="addCourse();">
+					<option value="">----选择课程----</option>
+				<%
+				List courseList = new ArrayList();
+				if(Validate.noNull(Major_Id)){
+					courseList = selectFiles.findCourseByMajorId(Major_Id);
+				}
+				Map courseMap;
+				for(int i=0;i<courseList.size();i++){
+					courseMap = (Map)courseList.get(i);
+					%>
+					<option value="<%=courseMap.get("COURSE_ID")%>"><%=courseMap.get("COURSE_NAME")%></option>
+					<%
+				}
+				%>
+				</select>
+			</div>
+			<div class="sm_edit_td_name">章节</div>
+			<div class="sm_edit_td_value">
+				<select id="chapter" name="CHAPTER_ID" onchange="addChapter();">
+					<option value="">----选择章节----</option>
+				<%
+				List chapterList = new ArrayList();
+				if(Validate.noNull(COURSE_ID)){
+					 chapterList = selectFiles.findChapterByCourseId(COURSE_ID);
+				}
+				Map chapterMap;
+				if(courseList.size()>0){
+					%><option value="add">(添加章节)</option><%
+				}
+				for(int i=0;i<chapterList.size();i++){
+					chapterMap = (Map)chapterList.get(i);
+					%>
+					<option value="<%=chapterMap.get("CHAPTER_ID")%>"><%=chapterMap.get("CHAPTER_NAME")%></option>
+					<%
+				}
+				%>
+				</select>
+			</div>
+			<div class="sm_edit_td_name">知识点</div>
+					<div class="sm_edit_td_value">
+						<select id="point" name="POINT_ID" onchange="addPoint();">
+							<option value="">--选择知识点--</option>
+						<%
+						PointManager pointManager = new PointManager();
+						List pointList = new ArrayList();
+						if(Validate.noNull(CHAPTER_ID)){
+							pointList = pointManager.findPointByChapterId(CHAPTER_ID);
+						}
+						Map pointMap;
+						if(chapterList.size()>0){
+							%><option value="addPoint">(添加知识点)</option><%
+						}
+						for(int i=0;i<pointList.size();i++){
+							pointMap = (Map)pointList.get(i);
+							%>
+							<option value="<%=pointMap.get("POINT_ID")%>"><%=pointMap.get("POINT_NAME")%></option>
+							<%
+						}
+						%>
+						</select>
+					</div>
+			
+				<div class="sm_edit_td_value" style="width: 377px;">
+				<div class="shangchuan sm_goSearch_btn_init">上传</div>
+				<div class="sm_goSearch_back sm_goSearch_btn_init">清空</div>
+			</div>
+		</div>
+		</div>
+	</form>
+	
+<div class="sm_list">
+		<table>
+			<tr>
+				<td style="width: 30px;" class="sm_index"></td>
+				<td style="width: 30px;" class="sm_index"><input
+					type="checkbox"></td>
+				<td style="width: 100px;">文件名</td>
+				<td style="width: 100px;">所属专业</td>
+				<td style="width: 100px;">所属课程</td>
+				<td style="width: 100px;">所属章节</td>
+				<td style="width: 100px;">所属知识点</td>
+				<td style="width: 60px;">下载权限</td>
+				<td style="width: 100px;">审核人</td>
+				<td style="width: 60px;">精品课程</td>
+				<td style="width: 60px;">审核状态</td>
+				<td style="width: 150px;">上传时间</td>
+				<td style="width: 280px;">操作</td>
+				<td style="width: 100px;">文件类型</td>
+			</tr>
+		</table>
+		<table>
+			<%
+				FilesManager filesManager = new FilesManager();
+				PageInfo pageInfo = null;
+				pageInfo = filesManager.findPageInfoByFILES(nowPage, pageSize, "_", request,Major_Id,COURSE_ID,CHAPTER_ID,Flag);
+				List list = pageInfo.getList();
+				Map map;
+				for(int i=0;i<list.size();i++){
+					map = (Map)list.get(i);
+					Map	pMap = pointManager.findMapByPOINT_ID((String)map.get("POINT_ID"));
+					String FlagName = null;
+					String classify = null;
+					if(map.get("FLAG")!=null){
+						if(map.get("FLAG").equals("00")){
+							FlagName = "未提交";
+						}
+						if(map.get("FLAG").equals("11")){
+							FlagName = "待审核";
+						}
+						if(map.get("FLAG").equals("22")){
+							FlagName = "审核通过";
+						}
+						if(map.get("FLAG").equals("33")){
+							FlagName = "打回";
+						}
+					}
+					
+					CategoryManager categoryManagers=new CategoryManager();
+					List categorylists=categoryManagers.findPageInfo();
+					Map categoryMaps;
+					for(int j=0;j<categorylists.size();j++){
+						categoryMaps=(Map) categorylists.get(j);
+						if(map.get("CLASSIFY").equals(categoryMaps.get("ID"))){
+							classify=categoryMaps.get("NAME").toString();
+						}
+					}
+					/* if(map.get("CLASSIFY")!=null){
+						if(map.get("CLASSIFY").equals("00")){
+							classify = "电子文件";
+						}
+						if(map.get("CLASSIFY").equals("01")){
+							classify = "图片文件";
+						}
+						if(map.get("CLASSIFY").equals("02")){
+							classify = "视频文件";
+						}
+						if(map.get("CLASSIFY").equals("03")){
+							classify = "其他文件";
+						}
+					} */
+			%>
+			<tr>
+				<td style="width: 30px;" class="sm_index"><%=i+1 %></td>
+				<td style="width: 30px;" class="sm_index">
+				<input type="checkbox" name="<%=i %>" value="<%=map.get("FILEID")%>">
+				<input type="hidden" value="<%=map.get("SWFPATH")%>">
+				<input type="hidden" class="checkedddd" value="<%=map.get("FLAG") %>">
+				<input type="hidden" class="POINT_NAME" value="<%=pMap.get("POINT_NAME") %>">
+				<input type="hidden" class="yinren" value=<%=map.get("FILENAME") %>>
+				<input type="hidden" class="majordddd" value="<%=Validate.isNullToDefault(map.get("MAJOR_NAME"),"")%>">
+				<input type="hidden" class="courseddd" value="<%=map.get("COURSE_NAME")==null?"":map.get("COURSE_NAME")%>">
+				<input type="hidden" class="charpterddd" value="<%=map.get("CHAPTER_NAME")%>">
+				<input type="hidden" class="filenamennn" value="<%=map.get("FALSENAME")%>">
+				<input type="hidden" class="checkflag" value="<%=map.get("FLAG")%>"/>
+				</td>
+				<td style="width: 100px;"><%=map.get("FULLNAME")==null?"":map.get("FULLNAME") %>
+				</td>
+				<td style="width: 100px;" ><%=Validator.isNull(map.get("MAJOR_NAME"))?"公共基础课":map.get("MAJOR_NAME") %></td>
+				<td style="width: 100px;" ><%=map.get("COURSE_ID")==null?"":map.get("COURSE_NAME") %></td>
+				<td style="width: 100px;" class="chapter"><%=map.get("CHAPTER_NAME")==null?"":map.get("CHAPTER_NAME") %></td>
+				<td style="width: 100px;" ><%=pMap.get("POINT_NAME")==null?"":pMap.get("POINT_NAME") %></td>
+				<td style="width: 60px;"><%=map.get("DOWNLOAD")==null?"":"00".equals(map.get("DOWNLOAD"))?"是":"否" %></td>
+				<td style="width: 100px;"><%=map.get("CHECKERNAME")==null?"":map.get("CHECKERNAME") %></td>
+				<td style="width: 60px;"><%="T".equals(map.get("ISEXCELLENT"))?"是":"F".equals(map.get("ISEXCELLENT"))?"否":"" %></td>
+				<td style="width: 60px;" ><%=FlagName==null?"":FlagName%></td>
+				<td style="width: 150px;" ><%=map.get("CREATETIME")==null?"":map.get("CREATETIME")%></td>
+				<td style="width: 280px;">
+					<div class="sharediv" style="position: relative;">
+					<%
+						if(ProcessFileUtil.isVideoFile(map.get("EXTENDNAME"))){
+					%>
+						<input type="hidden" name = "justmov"   value="movie">
+						&nbsp;<a onclick="lookView('<%=map.get("SWFPATH")%>')" href="#">在线预览</a>
+					<%
+						}else if(ProcessFileUtil.isPriviewNoVideo(map.get("EXTENDNAME"))){
+					%>	
+						<input type="hidden" name = "justmov"   value="notmovie">
+							&nbsp;<a href="<%=path+"\\filesmanager\\fileManager\\view.jsp?swfFile="%><%=map.get("SWFPATH")%>">在线预览</a>
+					<%
+						}else{
+					%>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="hidden" name = "justmov"   value="elsezip">
+					<%
+						}
+					%>
+					<input type="hidden" name="swfpath<%=i %>" value="<%=map.get("SWFPATH") %>">
+				&nbsp;&nbsp;<a href="" onclick="move('<%=map.get("FILEID")%>');return false;">移动到</a>
+					<%
+						if(map.get("DOWNLOAD").equals("00")){
+					%>
+						&nbsp;&nbsp;<a href ="<%=path+"/DownLoadServlet?FILEID="+map.get("FILEID")%>"class="downloadfile">下载</a>
+						&nbsp;&nbsp;<a href="#" class="shareddom" >分享</a>		
+					<%	
+						}else{
+					%>
+						&nbsp;&nbsp;<a href="#" style="visibility: hidden;">下载</a>
+						&nbsp;&nbsp;<a href="#" style="visibility: hidden;">分享</a>	
+					<%
+						}
+					%>
+					</div>
+				</td>
+				<td style="width: 100px;"><%=classify==null?"":classify %>
+			</tr>		
+				<%
+					}
+				%>	
+		</table>
+	</div>
+<%@include file="/ggs/include/page.inc"%>
+<%@include file="/ggs/include/js.inc" %>
+<script type="text/javascript" src="<%=path %>/js/jquery.zclip.js"></script>
+<script type="text/javascript">
+		$(function() {
+			//cud处理成功后关闭本页面,父页面刷新
+			jumpRemark("<%=bool%>","<%=path%>","done.jsp");
+			//给tool标签增加"修改"和"审核"和"删除"按钮操作
+			var updateObj = {
+				text : "修改",
+				width : 60,
+				position : "-360px -100px",
+				handler : function() {
+					var id = "";
+					var $checkeds = $(".sm_list table").eq(1).find(":checkbox").filter(":checked");
+					var POINT_NAME = $checkeds.siblings(".POINT_NAME").val();
+					var checkflag = $checkeds.siblings(".checkflag").val();
+					var majorId = $("[name='MAJOR_ID']").val();
+					var courseId = $("[name='COURSE_ID']").val();
+					var chapterId = $("[name='CHAPTER_ID']").val();
+					var POINT_ID = $("[name='POINT_ID']").val();
+					if($checkeds.length!=1){
+						alert("只能选择一条信息进行操作");
+					}else if(checkflag=="11"){
+						alert("该资源已提交不能进行修改");
+					}else if(checkflag=="22"){
+						alert("该资源已审核通过不能进行修改");
+					}else{
+						var id = $checkeds.val();
+						var status = $("#Flag").val();
+						var src = "updateFile.jsp";
+						src += "?verifyStatus="+status+"&fileId="+id + "&POINT_NAME="+POINT_NAME;
+						src += "&Major_id="+majorId+"&COURSE_ID="+courseId
+					+"&CHAPTER_ID="+chapterId+"&POINT_ID="+POINT_ID;
+						jumpWindow("修改文件名称","350px","200px",src);
+					}
+			}
+			};
+			var deleteObj = {
+				text : "删除",
+				width : 60,
+				position : "-180px -160px",
+				handler : function() {
+					var $checkeds = $(".sm_list table").eq(1).find(":checkbox").filter(":checked");
+					var checkflag = $checkeds.siblings(".checkflag").val();
+					if($checkeds.length<1){
+						alert("最少选择一条信息进行操作");
+					}
+					// else if(checkflag=="11"){
+					// 	alert("该资源已提交不能进行删除");
+					// }
+					else if(checkflag=="22"){
+						alert("该资源已审核通过不能进行删除");
+					}else{
+						if(confirm("确认删除？")){
+						var ids = [];
+						var $this;
+						$checkeds.each(function(){
+							$this = $(this);
+							ids.push($this.val());
+						});
+						$("[name=operateType]").val("D");
+						$("[name=P_FILES_FILEID_S_WD]").val(ids.join("','"));
+						$("#pageForm").submit();
+						}
+					}
+				}
+			};
+			var submitObj = {
+				text : "提交",
+				width : 60,
+				position : "-280px -120px",
+				handler : function() {
+					var $checkeds = $(".sm_list table").eq(1).find(":checkbox").filter(":checked");
+					var checkflag = $checkeds.siblings(".checkflag").val();
+					if($checkeds.length<1){
+						alert("最少选择一条信息进行操作");
+					}
+					// else if(checkflag=="11"){
+					//	alert("该资源已提交不能进行提交");
+					// }
+					else if(checkflag=="22"){
+						alert("该资源已审核通过不能进行提交");
+					}else{
+						var ids = [];
+						var $this;
+						$checkeds.each(function(){
+							$this = $(this);
+							ids.push($this.val());
+						});
+						$("[name=operateType]").val("U");
+						$("[name=P_FILES_FILEID_S_WU]").val(ids.join("','"));
+						$("[name=P_FILES_FLAG_S_S]").val("11");
+						$("#pageForm").submit();
+					}
+				}
+			}  ;
+			
+			//按钮的样式
+			var verifys = $("#Flag").val();
+			if("22" == verifys){
+				//若选择审核与否，则不显示前面的按钮
+				$(".tool").toolBar([]);
+			}else{
+				//若选择未提交和打回，则显示前面三个按钮
+				//按钮的顺序
+				$(".tool").toolBar([updateObj,deleteObj,submitObj]);
+			}
+			
+			//回显专业
+			var msjorObj = $("#major");
+			var majorlength = $("#major option").length;
+			var major = '<%=request.getParameter("MAJOR_ID")==null?"":request.getParameter("MAJOR_ID")%>';
+			var str1 = "";
+			for(var i=0;i<majorlength;i++){
+				str1 = msjorObj[0].options[i].value;
+				if(str1 == major){
+					msjorObj[0].options[i].selected = true;
+				}
+			}
+			//回显课程
+			var courseObj = $("#course");
+			var courselength = $("#course option").length;
+			var course = '<%=request.getParameter("COURSE_ID")==null?"":request.getParameter("COURSE_ID")%>';
+			var str2 = "";
+			for(var i=0;i<courselength;i++){
+				str2 = courseObj[0].options[i].value;
+				if(str2 == course){
+					courseObj[0].options[i].selected = true;
+				}
+			}
+			//回显章节
+			var chapterObj = $("#chapter");
+			var chapterlength = $("#chapter option").length;
+			var chapter = '<%=request.getParameter("CHAPTER_ID")==null?"":request.getParameter("CHAPTER_ID")%>';
+			var str3 = "";
+			for(var i=0;i<chapterlength;i++){
+				str3 = chapterObj[0].options[i].value;
+				if(str3 == chapter){
+					chapterObj[0].options[i].selected = true;
+				}
+			}
+			//回显知识点
+			var folderObj = $("#point");
+			var folderlength = $("#point option").length;
+			var folder = '<%=request.getParameter("POINT_ID")==null?"":request.getParameter("POINT_ID")%>';
+			var str4 = "";
+			for(var i=0;i<folderlength;i++){
+				str4 = folderObj[0].options[i].value;
+				if(str4 == folder){
+					folderObj[0].options[i].selected = true;
+				}
+			}
+			//回显是否可以下载
+			var obj = $("[name='DOWNLOAD']");
+			var download = "<%=request.getParameter("DOWNLOAD")%>";
+			if(download == "00"){
+				obj[0].options[1].selected = true;
+			}else if(download == "11"){
+				obj[0].options[2].selected = true;
+			}
+			//清空输入查询内容
+			$(".sm_goSearch_back").click(function(){
+				msjorObj[0].options[0].selected = true;
+		    	$("[id=course] option").remove();
+		    	$("[id=course]").append('<option value="">----选择课程----</option>');
+		    	$("[id=chapter] option").remove();
+		    	$("[id=chapter]").append('<option value="">----选择章节----</option>');
+		    	folderObj[0].options[0].selected = true;
+				obj[0].options[0].selected = true;
+			});
+			//清空输入查询内容       上传
+			$(".shangchuan").click(function(){
+				var length = $('#point').val().length;
+				if(length<=0){
+					alert("请选择知识点!");
+				}else{
+					var majorId = $("[name='MAJOR_ID']").val();
+					var courseId = $("[name='COURSE_ID']").val();
+					var chapterId = $("[name='CHAPTER_ID']").val();
+					var POINT_ID = $("[name='POINT_ID']").val();
+					var src = "addFile.jsp?Major_id="+majorId+"&COURSE_ID="+courseId
+					+"&CHAPTER_ID="+chapterId+"&POINT_ID="+POINT_ID;
+//						location.href = src;
+					jumpWindow("上传文件","590px","420px",src);
+				}
+			});
+// 			$("td:contains(审核通过)").css("color","green");
+// 			$("td:contains(打回)").css("color","red");
+			setPageSize();
+		});
+		//根据专业查询课程
+		function addMajor(){
+			var majorId = $("#major").val();
+			var url = "selectCourse.jsp";
+		    var params="type=1&pkId="+majorId;
+		    jQuery.getJSON(url,params,function callback(data){
+		    	$("[id=course] option").remove();
+		    	$("[id=course]").append('<option value="">----选择课程----</option>');
+		    	$("[id=chapter] option").remove();
+		    	$("[id=chapter]").append('<option value="">----选择章节----</option>');
+		    	$("[id=point] option").remove();
+		    	$("[id=point]").append('<option value="">--选择知识点--</option>');
+	 			jQuery.each(data,function(i,item){
+		 	    	$("[id=course]").append(
+		 	    		'<option value="'+item.COURSE_ID+'">'+item.COURSE_NAME+'</option>'
+		 	    	);
+	 			});
+	 		});
+		}
+		//根据课程查询章节
+		function addCourse(){
+			var courseId = $("#course").val();
+			var url = "selectCourse.jsp";
+		    var params="type=2&pkId="+courseId;
+		    jQuery.getJSON(url,params,function callback(data){
+		    	$("[id=chapter] option").remove();
+		    	$("[id=chapter]").append('<option value="">----选择章节----</option>');
+		    	$("[id=chapter]").append('<option value="add">(添加章节)</option>');
+	 			jQuery.each(data,function(i,item){
+		 	    	$("[id=chapter]").append(
+		 	    		'<option value="'+item.CHAPTER_ID+'">'+item.CHAPTER_NAME+'</option>'
+		 	    	);
+	 			});
+	 		});
+		}
+		//选择'添加章节'
+		function addChapter(){
+			var chapterObj = $("#chapter");
+			if(chapterObj.val() == "add"){
+				var majorId = $("[name='MAJOR_ID']").val();
+				var courseId = $("[name='COURSE_ID']").val();
+				var src = "addChapter.jsp?majorId="+majorId+"&courseId="+courseId;
+		    	$("[id=point] option").remove();
+		    	$("[id=point]").append('<option value="">--选择知识点--</option>');
+				chapterObj[0].options[0].selected = true;
+				jumpWindow("添加章节","800px","500px",src);
+			}else{
+				var chapterId = chapterObj.val();
+				var url = "<%=path%>\\filesmanager\\fileManager\\selectCourse.jsp";
+			    var params="type=4&pkId="+chapterId;
+			    jQuery.getJSON(url,params,function callback(data){
+			    	$("[id=point] option").remove();
+			    	$("[id=point]").append('<option value="">--选择知识点--</option>');
+			    	$("[id=point]").append('<option value="addPoint">(添加知识点)</option>');
+		 			jQuery.each(data,function(i,item){
+			 	    	$("[id=point]").append(
+			 	    		'<option value="'+item.POINT_ID+'">'+item.POINT_NAME+'</option>'
+			 	    	);
+		 			});
+		 		});
+			}
+		}
+		function addPoint(){
+			var PointObj = $("#point");
+			if(PointObj.val() == "addPoint"){
+				var majorId = $("[name='MAJOR_ID']").val();
+				var courseId = $("[name='COURSE_ID']").val();
+				var chapterId = $("[name='CHAPTER_ID']").val();
+				var src = "addPoint.jsp?majorId="+majorId+"&courseId="+courseId+"&chapterId="+chapterId;
+				PointObj[0].options[0].selected = true;
+				jumpWindow("添加知识点","800px","500px",src);
+			}
+		}
+		function setPageSize() {
+			setWidth($(".sm_list"),$("body"));
+			setHeight($(".sm_list"),$("body"),[$(".page"),$(".sm_edit_from")]);
+		}
+		 function lookView(src){
+			 src = "<%=path%>\\filesmanager\\fileManager\\playVideo.jsp?fileName="+src+".flv";
+			 jumpWindow("在线预览",625,480,src);
+		 }
+		 function move(fileid){
+			 var src=' moveFolder.jsp?fileId='+fileid;
+				jumpWindow("移动文件","500px","300px",src);
+		 }
+		 //下拉菜单change事件
+		 function changeName(){
+				$("form").submit();
+			}
+		//回显下拉菜单审核状态
+			var typeObj = $("#Flag");
+			var length2 = $("#Flag option").length;
+			var typeName = "<%=request.getParameter("Flag")%>";
+			var str = "";
+			for(var i=0;i<length2;i++){
+				str = typeObj[0].options[i].value;
+				if(str == typeName){
+					typeObj[0].options[i].selected = true;
+				}
+			}
+		//分享
+		$(function(){
+			$('.shareddom').zclip({
+				path:'<%=serverPath%>/js/ZeroClipboard.swf',
+			    copy:function(){
+			    	return '<%=downbase%>'+$(this).siblings('.downloadfile').attr('href');
+			    }
+		   	 });
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/homeManager/menu
+END
+MenuBySaas.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/homeManager/menu/MenuBySaas.java
+END
+MenuByCommon.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/homeManager/menu/MenuByCommon.java
+END
+MenuByNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/homeManager/menu/MenuByNull.java
+END
+MenuFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/homeManager/menu/MenuFactory.java
+END
+IMenuMould.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/resourcesPlatform/!svn/ver/4/resourcesPlatform/src/com/googosoft/ggs/homeManager/menu/IMenuMould.java
+END

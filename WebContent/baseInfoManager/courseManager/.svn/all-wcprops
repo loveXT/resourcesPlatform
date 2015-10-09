@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/resourcesPlatform/!svn/ver/33/resourcesPlatform/WebContent/baseInfoManager/courseManager
+END
+addCourse.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/resourcesPlatform/!svn/ver/33/resourcesPlatform/WebContent/baseInfoManager/courseManager/addCourse.jsp
+END
+listCourse.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/resourcesPlatform/!svn/ver/33/resourcesPlatform/WebContent/baseInfoManager/courseManager/listCourse.jsp
+END
+updateCourse.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/resourcesPlatform/!svn/ver/33/resourcesPlatform/WebContent/baseInfoManager/courseManager/updateCourse.jsp
+END

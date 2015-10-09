@@ -1,0 +1,34 @@
+
+/* *****************************菜单条样式*/
+/* 已修改 */
+.optionBar_div {
+	height: 27px;
+	position: absolute;
+	z-index: 1;
+	right: 10px;
+}
+
+.optionBar_button {
+	width: 50px;
+	height: 25px;
+	margin: 1px 0px 0px 2px;
+	padding: 3px 5px 0px 0px;
+/* 	border-right: 1px solid #CFCFCF; */
+	border: 0px;
+	position: relative;
+	font-size: 12px;
+	text-align: center;
+	cursor: pointer;
+}
+/* 已修改 */
+.optionBar_button_oldColor {
+	border-color: #99BBE8; 
+	border-bottom-style:none;
+	color: #3F5A85;
+	background: url("images/optionBar_old.jpg") repeat-x;
+}
+/* 已修改 */
+.optionBar_button_newColor {
+	background: url("images/optionBar_new.png") repeat-x;
+	font-weight: bold;
+}

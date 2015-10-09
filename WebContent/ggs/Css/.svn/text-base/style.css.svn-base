@@ -1,0 +1,303 @@
+﻿/* Author:xx */
+/*所有标签，margin、padding都设成0，所有字号12px*/
+*,html, body, div, dl, dt, dd, ul, ol, li
+{
+	margin: 0;
+	padding: 0;
+	font-size:12px;
+	text-align:left;
+}
+html,body,form
+{
+    height:100%;
+    width:100%;
+    overflow:hidden;
+}
+/*滚动条样式*/
+body{
+
+    SCROLLBAR-FACE-COLOR: #EEF4FF; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; 
+	SCROLLBAR-SHADOW-COLOR: #ffffff; 
+	SCROLLBAR-3DLIGHT-COLOR: #ffffff; 
+	SCROLLBAR-ARROW-COLOR: #f0b700; 
+	SCROLLBAR-TRACK-COLOR: #ffffff; 
+	SCROLLBAR-DARKSHADOW-COLOR: #253f5c;
+ }
+/*外围整个大的div,详细信息页面可以不用*/
+div#div_body{
+    height:100%;
+    width:100%;
+    overflow:hidden;
+}
+/*用于列表页面*/
+div#div_list
+{
+    width:99.8%;
+    height:99.5%;
+    margin:0 auto;
+    overflow:hidden;
+}
+/*用于详细信息页面*/
+div#centent_body
+{
+    width:99.5%;
+    height:99.5%;
+    overflow:auto;
+    margin:0 auto;
+    border: 1px solid #A6C2D7;
+    margin-top:1px;
+}
+div#div_list div#centent_body{ width:99.8%;}
+/*用于左面有树的的页面-----左边*/
+div#div_left{
+    height:100%;
+    width:19%;
+    float:left;
+    overflow:hidden;
+}
+div#leftTree{
+	height:99.5%;
+	width:98.5%;
+	overflow:auto;
+	margin-left:2px;
+    border: 1px solid #A6C2D7;
+    margin-top:1px;clear:both;
+}
+/*用于左面有树的的页面-----右边*/
+div#div_right{
+    height:100%;
+    width:81%;
+    float:right;
+    overflow:hidden;
+}
+.clear{clear:both; width:100%;font-size:0px; display:none}
+/*页面标题部分*/
+.div_title
+{
+	height:40px; line-height:40px;
+	font-weight:bold; font-size:large;
+	padding: 10px;
+	text-align: center;
+	margin:0px auto;
+	/*background:#F0F0F0;*/
+}
+/*详细信息页面的样式描述*/
+.div_detailpage #header{
+	position:absolute;top:2px;
+	width:99.5%;
+}
+.div_detailpage .d_btn{
+	position:absolute;top:27px;
+	width:99.5%;
+}
+.div_detailpage .div_title{ padding-top:60px;}
+/*详细信息页面--最下面按钮的样式*/
+div.div_btn{
+	padding: 10px; 
+	text-align: center;
+	margin:0px auto;
+    height:21px;
+	/*background:#F0F0F0;*/
+}
+
+a:visited {
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+a:hover {
+	font-size: 12px;
+	color: #cc0000;
+	text-decoration: none;
+}
+a:active {
+	font-size: 12px;
+	color: #CC0000;
+	text-decoration: none;
+}
+a:link {
+	font-size: 12px;
+	color:Black;
+	text-decoration: none;
+}
+/*分页控件的Div*/
+.aspNetpager
+{
+    width:99.55%;
+    height: 25px;
+    position: absolute; 
+    bottom:0.1%;
+    right:0.1%;
+    border:1px solid #A6C2D7;
+    vertical-align: bottom;
+    BORDER-BOTTOM-COLOR: #a9bfd3; background-color:#d0def0;	
+}
+/*分页控件的样式*/
+#AspNetPager1
+{
+	margin-left:5px;
+	line-height:22px;
+}
+
+/**********************************************/
+/*列表样式*/
+/*列表页面dataGrid的div样式*/
+div.d_grid
+{
+    height:86%;
+    width:99.6%;
+    margin:0 auto; 
+	overflow:auto;
+    position: absolute;
+}
+/*详细信息页面dataGrid的div样式*/
+.dd_grid{
+	margin:0 auto;
+	margin-top:5px;
+	border-top:1px solid #bfd8f6;
+}
+.dd_grid .x-grid{width:100%;}
+.dd_grid .x-grid-hd-row{ position:static;}
+.dd_grid .x-grid-cell-first{ position:static;}
+/*DataGrid 引用的样式*/
+.x-grid
+{
+	border-collapse:collapse;	
+	border:1px solid #EDEDED;
+	table-layout:auto;
+}
+.x-grid td{
+	border-right:1px solid #bfd8f6;
+	border-bottom:1px solid #bfd8f6;
+	border:1px solid #bfd8f6;
+	border-top:0px none;
+	height:23px;
+	padding: 0px 2px;
+}
+/*DataGrid表头引用的样式*/
+.x-grid-hd-row{
+	height:23px;
+	border-left:1px solid #A6C2D7;
+	width:100%;
+	word-break:break-all;
+	word-warp:nowarp;
+	border-bottom:none;
+	 /*position:relative;
+    left:expression(0-document.getElementById('d_grid').scrollLeft);
+   top:expression(document.getElementById('d_grid').scrollTop);*/
+    position: relative; 
+    top: expression(this.offsetParent.scrollTop); 
+    z-index: 10;
+}
+.x-grid-hd-row td,
+.x-grid-hd-no td
+{
+	/*border:1px solid #000;*/
+	background:url('../images/bg/bg_btn2.gif');
+	border-bottom:none;
+	white-space:nowrap;
+    font-weight:bold;
+}
+.x-grid-hd-row td a
+{
+	text-decoration:none;
+}
+.x-grid-hd-row td.x-grid-first-cell
+{
+	position: relative; 
+    left: expression(this.parentElement.offsetParent.scrollLeft);
+}
+.x-grid-hd-row td{
+	text-align:center;
+}
+.x-grid td.x-grid-cell-checker{
+	text-align:center;
+}
+/*DataGrid第一列引用的样式*/
+.x-grid-cell-first
+{
+	width:35px;
+	background-attachment: scroll;
+	background-repeat: repeat-y;
+	background-position-x: right;
+	background-position-y: center;
+	background-color:#fff;/* transparent;*/
+	text-align:right;
+	background-image: url("../images/bg/grid3-special-col-bg.gif");
+    position: relative;
+    left: expression(this.parentElement.offsetParent.parentElement.scrollLeft);
+	border-right:0px solid #bfd8f6;
+	border-bottom:1px solid #bfd8f6;
+}
+.t_head{ display:none;}
+.d_hid{ display:none;}
+
+/****DataGrid*********/
+/*选中的*/
+.datagrid-checked
+{
+	background-color: #dfe8f6;
+}
+/*不可选择的项*/
+.datagrid-unchecked
+{
+	
+	/*background-color: #DEEBFC;*/
+}
+.x-grid td table td{ border:none;}
+
+.txt{
+		border:none;
+		color:black;
+		border-bottom:1px solid #005aa7;
+		background-color:transparent;
+		width:200px
+}
+
+/*查询条件背景图*/
+.tb_cx
+{
+	background-image: url("../images/bg/bg_cx.gif");
+	background-repeat:no-repeat;
+	width:380px;
+	margin:0 auto;
+}
+.td_title{
+	height: 30px;
+	line-height:30px;
+	font-size:large;
+	font-weight:bold;
+	color:#FF0000;
+}
+.tb_cx .td_bh
+{
+	height: 31px;
+	font-size:14px; 
+	font-weight:bold; 
+	vertical-align:bottom; 
+	padding-left:25px;
+}
+.tb_cx .td_rq
+{
+	height: 16px;
+	font-size:14px; 
+	font-weight:bold; 
+	vertical-align:bottom; 
+	padding-left:25px;
+}
+.tr_cxTop{
+	background:url('../images/bg/bg_cx.gif') no-repeat;
+	height:35px; font:14px bold;
+	padding-left:25px; line-height:40px;
+}
+.tr_cxMiddle{
+	background:url('../images/bg/bg_cx.gif') no-repeat 0 -32px;
+	text-align:center;
+}
+.tr_cxBottom{
+	background:url('../images/bg/bg_cx.gif') no-repeat 0 -65px;
+	height:50px; line-height:40px;
+}
+.tr_cxBottom td{
+	padding-top:7px;}

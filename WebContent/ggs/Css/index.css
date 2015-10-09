@@ -1,0 +1,55 @@
+﻿*,body,ul,li 
+{
+	margin:0;
+	padding:0;
+    border:0px;
+    font-family:宋体;
+    font-size:12px;
+}
+
+/*登陆界面样式*/
+div#div_login
+{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	background: #F5FAFF;
+	background:url(../Images/login/bg-big.jpg) top center;
+}
+/*系统名称*/
+div#div_sysname
+{
+	width:550px;
+	height:50px;
+	margin:0 auto;
+	margin-top:260px;
+	padding-left:20px;
+   
+}
+div#login_panel
+{
+	width:330px;
+	height:290px;
+	margin:0 auto;
+	margin-top:50px;
+	padding-left:100px;
+    font-size:14px;
+}
+#login_panel .user_info div{ height:40px; line-height:40px; text-align:center;}
+.txt_user{
+	background:url(../Images/login/dlk_01.gif) no-repeat;
+	width:220px; height:26px;
+	border:none;
+	line-height:26px;
+	padding-left:2px;
+}
+.txt_pwd
+{
+	background:url(../Images/login/dlk_02.gif) no-repeat;
+	width:200px; height:26px;
+	border:none;
+	line-height:26px;
+	padding-right:20px;
+	padding-left:2px;
+}
+div.btn_login{ padding-top:5px;}
